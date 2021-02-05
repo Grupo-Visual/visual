@@ -9,7 +9,7 @@ var myp5 = new p5((p) => {
     c = p.color(42, 106, 105);
     d = p.color(165, 89, 20);
     e = p.color(146, 150, 127);
-    p.noLoop(); // Draw only one time
+    p.noLoop();
   }
 
   p.draw = function () {
