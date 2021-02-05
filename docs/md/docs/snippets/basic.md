@@ -1,143 +1,123 @@
-# Code Features
+# P5 inline code
 
-This is a quick overview of codedoc specific features at your disposal in markdown
-`code` elements. For a complete list, please checkout the [official documentation](https://codedoc.cc).
-You can also take a look at `docs/md/docs/code-features.md` to see the markdown behind this page.
+Create and manipulate some quadrilles.
 
-> :Buttons
-> > :Button label=Official Docs, url=https://codedoc.cc
+> :P5 lib1=https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.min.js, width=200, height=400
+>
+> const ROWS = 20;
+> const COLS = 10;
+> const LENGTH = 20;
+> var quadrille;
+> var clone;
+> var x = 2, y = 2;
+> 
+> function setup() {
+>   createCanvas(COLS * LENGTH, ROWS * LENGTH);
+>   quadrille = createQuadrille([[color('cyan'), '👽',             0    ],
+>                                [0,             '🤔',            '🙈' ],
+>                                [0,             color('#770811'), 0   ],
+>                                ['g',           'o',             'l'  ]
+>                               ]);
+>   quadrille.reflect();
+>   clone = quadrille.clone();
+>   clone.reflect();
+> }
+> 
+> function draw() {
+>   background('#060621');
+>   drawQuadrille(quadrille, x, y, LENGTH, 2, 'green');
+>   drawQuadrille(clone, 2, 8, LENGTH, 0);
+> }
 
-<br>
-
-> ⚠️⚠️
-> Do not forget to **REMOVE THIS PAGE** from your actual documentation!
-> ⚠️⚠️
-
-<hr>
-
-## Hints
-
-A comment with the following format will cause a hint to be displayed on-hover:
-
-> `// --> some hint here`
-
-```tsx | index.tsx
-import { Renderer } from '@connectv/html';                       // --> there is a hint on this line
-
-const MyComp = ({ name }, renderer) => <div>Hellow {name}!</div> // --> there is also a hint on this line
-
-const renderer = new Renderer();
-renderer.render(
-  <fragment>
-    <MyComp name='World'/>
-    <MyComp name='Fellas'/>                                      {/* --> also this is a hint */}
-  </fragment>
-)
-.on(document.body);
-```
-
-<br>
-
-The following syntax styles are supported:
-
-
-```go
-"// --> standard one-liner" // --> standard one-liner
-```
-
-```java
-"/* --> standard multi-liner */" /* --> standard multi-liner */
-```
-
-```py
-"# --> python/bash comments" # --> python/bash comments
-```
+note that the above sketch code is included within the markdown itself like this:
 
 ```md
-<‌!--> html comments --> <!--> html comments -->
-```
-
-
-<hr>
-
-## References
-
-Add a comment with following format in the code will show a link on-hover over the line:
-
-> `// @see https://www.google.com`
-
-```tsx
-import { Renderer } from '@connectv/html';                       // @see https://github.com/CONNECT-platform/connective-html
-```
-
-You can also use the markdown link format to give your links a title:
-
-````md | --no-wmbar
-```
-import { Renderer } from '@connectv/html'; // @see [CONNECTIVE HTML Docs](https://github.com/CONNECT-platform/connective-html)
-```
-````
-```tsx
-import { Renderer } from '@connectv/html';                       // @see [CONNECTIVE HTML Docs](https://github.com/CONNECT-platform/connective-html)
-```
-
-You can also use these references to refer to another tab in a tab-component:
-
-```md | some-doc.md
-> :Tabs
-> > :Tab title=First Tab
-> >
-> > ```tsx
-> > import { func } from './other'; // @see tab:Second Tab
-> >
-> > func(); // --> good stuff will happen now
-> > ```
+> :P5 lib1=https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.min.js, width=200, height=400
 >
-> > :Tab title=Second Tab
-> >
-> > ```tsx
-> > export function func() {
-> >   console.log('Good Stuff!');
-> > }
-> > ```
-```
-<br>
-
-> :Tabs
-> > :Tab title=First Tab
-> >
-> > ```tsx
-> > import { func } from './other'; // @see tab:Second Tab
-> >
-> > func(); // --> good stuff will happen now
-> > ```
->
-> > :Tab title=Second Tab
-> >
-> > ```tsx
-> > export function func() {
-> >   console.log('Good Stuff!');
-> > }
-> > ```
-
-Similar syntax styles to hints are supported for references as well:
-
-
-```js
-"// @‌see [random stuff](https://www.randomlists.com/things)" // @see [random stuff](https://www.randomlists.com/things)
+> const ROWS = 20;
+> const COLS = 10;
+> const LENGTH = 20;
+> var quadrille;
+> var clone;
+> var x = 2, y = 2;
+> 
+> function setup() {
+>   createCanvas(COLS * LENGTH, ROWS * LENGTH);
+>   quadrille = createQuadrille([[color('cyan'), '👽',             0    ],
+>                                [0,             '🤔',            '🙈' ],
+>                                [0,             color('#770811'), 0   ],
+>                                ['g',           'o',             'l'  ]
+>                               ]);
+>   quadrille.reflect();
+>   clone = quadrille.clone();
+>   clone.reflect();
+> }
+> 
+> function draw() {
+>   background('#060621');
+>   drawQuadrille(quadrille, x, y, LENGTH, 2, 'green');
+>   drawQuadrille(clone, 2, 8, LENGTH, 0);
+> }
 ```
 
-```go
-"/* @‌see https://google.com */" /* @see https://google.com */
+# P5 instance mode
+
+Use the *a*, *s*, *w* and *z* keys to move the quadrille:
+
+> :P5 lib1=https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.min.js, sketch=/docs/sketches/colors.js, width=400, height=400, version=1.1.8
+
+The markdown of the above sketch looks like this:
+
+```markdown
+> :P5 lib1=https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.min.js, sketch=/docs/sketches/colors.js, width=400, height=400, version=1.1.8
 ```
 
-```python
-"#@see https://github.com" #@see https://github.com
+and the `colors.js` [p5 instance mode](https://github.com/processing/p5.js/wiki/Global-and-instance-mode) like this:
+
+```js | colors.js
+var myp5 = new p5((p) => {
+  const ROWS = 20;
+  const COLS = 20;
+  const LENGTH = 20;
+  var quadrille;
+  var clone;
+  var x = 2, y = 2;
+
+  p.setup = function () {
+    p.createCanvas(COLS * LENGTH, ROWS * LENGTH);
+    quadrille = p.createQuadrille([[p.color('cyan'), '👽',               0    ],
+                                   [0,               '🤔',              '🙈' ],
+                                   [0,               p.color('#770811'), 0   ],
+                                   ['g',             'o',                'l' ]
+                                  ]);
+    clone = quadrille.clone();
+    clone.reflect();
+  };
+
+  p.draw = function () {
+    p.background('#007ACC');
+    p.drawQuadrille(quadrille, x, y, LENGTH, 2, 'green');
+    p.drawQuadrille(clone, 12, 2, LENGTH, 0);
+  };
+
+  p.keyPressed = function () {
+    if (p.keyCode === p.LEFT_ARROW) {
+      quadrille.reflect();
+    } else if (p.keyCode === p.RIGHT_ARROW) {
+      quadrille.rotate();
+    }
+    if (p.key === 'a') {
+      x = x > 0 ? x - 1 : x;
+    }
+    if (p.key === 's') {
+      x = x < COLS - quadrille.width ? x + 1 : x;
+    }
+    if (p.key === 'w') {
+      y = y > 0 ? y - 1 : y;
+    }
+    if (p.key === 'z') {
+      y = y < ROWS - quadrille.height ? y + 1 : y;
+    }
+  };
+}, "colors"); // --> the id should be the same file name
 ```
-
-```html
-<!-- @‌see [the first page](/) --> <!-- @see [the first page](/) -->
-```
-
-
-> :ToCPrevNext

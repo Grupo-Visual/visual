@@ -6,7 +6,8 @@
 >
 > [Basics](/docs/snippets/basic)
 > [Image](/docs/snippets/image)
-> [Video](/docs/snippets/video)
+> [Video on dom](/docs/snippets/video-dom)
+> [Video on canvas](/docs/snippets/video-canvas)
 > [Libs](/docs/snippets/lib)
 
 <br><br>

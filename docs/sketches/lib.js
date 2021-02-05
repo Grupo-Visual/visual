@@ -2,7 +2,7 @@ var quadrille;
 var image;
 
 function preload() {
-  image = loadImage('/p5.quadrille.js/docs/sketches/mahakala.jpg');
+  image = loadImage('/vc/docs/sketches/mahakala.jpg');
 }
 
 function setup() {
