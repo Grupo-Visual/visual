@@ -9,6 +9,7 @@
 > [Video on dom](/docs/snippets/video-dom)
 > [Video on canvas](/docs/snippets/video-canvas)
 > [Libs](/docs/snippets/lib)
+> [Sound](/docs/snippets/sound)
 
 <br><br>
 
