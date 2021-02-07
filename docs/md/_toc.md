@@ -3,7 +3,8 @@
 [Code Features](/docs/code-features)
 
 > :Collapse label=P5 Code Snippets
->
+> 
+> [P5 Component](/docs/snippets/component)
 > [Basics](/docs/snippets/basic)
 > [Video on dom](/docs/snippets/video-dom)
 > [Video on canvas](/docs/snippets/video-canvas)
