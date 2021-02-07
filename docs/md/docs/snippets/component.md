@@ -10,7 +10,7 @@ Component used to display the [p5.js](https://p5js.org) code snippets found in t
 
 | <!-- --> | <!-- -->                                                                                                          |
 |----------|-------------------------------------------------------------------------------------------------------------------|
-| sketch   | path to p5 sketch either in global or instance mode. The sketch file name should equaks the "id" in instance mode |
+| sketch   | path to p5 sketch either in global or instance mode. Code may be inlined within when no variable is provided. the The sketch file name should equaks the "id" in instance mode |
 | width    | Sketch width default is 800                                                                                       |
 | height   | Sketch height default is 600                                                                                      |
 | sound    | Either *true* or *false*                                                                                          |
