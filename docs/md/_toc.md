@@ -2,6 +2,8 @@
 [Markdown Cheat Sheet](/docs/cheat-sheet)
 [Code Features](/docs/code-features)
 
+> :Collapse label=Workshoops
+
 > :Collapse label=P5 Code Snippets
 > 
 > [P5 Component](/docs/snippets/component)

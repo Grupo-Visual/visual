@@ -1,1 +1,3 @@
-# vc
+# Visual Computing Template
+
+Hacking instructions.
