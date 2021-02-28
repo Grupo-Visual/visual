@@ -55,6 +55,8 @@ Observaciones:
 
 ## Hacking
 
+The page is to be developed at the `main` branch of your `https://github.com/<gh-username>/vc` repo using [codedoc](https://codedoc.cc/). And the resulting webpage served from the `gh-pages` branch. Refer to the [gh-pages](https://pages.github.com/) documentation for details.
+
 1. Install [codedoc](https://codedoc.cc/):
    ```shell
    npm i -g @codedoc/cli
@@ -66,13 +68,13 @@ Observaciones:
    # --> Created fork will be <gh-username>/vc:
    gh repo fork #@see https://cli.github.com/manual/gh_repo_fork
    ```
-   Note that the cloned repo already contains the [codedoc-p5-plugin](https://github.com/VisualComputing/vc/tree/main/.codedoc/components/p5) which is been developed separately [here](https://github.com/VisualComputing/codedoc-p5-plugin).
+   Note that the cloned repo already contains the [codedoc-p5-plugin](https://github.com/VisualComputing/vc/tree/main/.codedoc/components/p5) which is being developed separately [here](https://github.com/VisualComputing/codedoc-p5-plugin).
 3. Install  `codedoc` dependencies (don't forget to `cd vc` if you haven't already):
    ```shell
    codedoc install
    ```
 4. Edit your `<gh-username>` at the `github` section of the `.codedoc/config.ts` file, replacing `visualcomputing` with your `<gh-username>`.
-   ```ts
+   ```ts | config.ts
    export const config = configuration({
      // ..
      misc: {
