@@ -55,7 +55,7 @@ Observaciones:
 
 ## Hacking
 
-The page is to be developed at the `main` branch of your `https://github.com/<gh-username>/vc` repo using [codedoc](https://codedoc.cc/). And the resulting webpage served from the `gh-pages` branch. Refer to the [gh-pages](https://pages.github.com/) documentation for details.
+The page is to be developed at the `main` branch of your `https://github.com/<gh-username>/vc` repo using [codedoc](https://codedoc.cc/), and the resulting webpage served from the `gh-pages` branch of that repo. Refer to the [gh-pages](https://pages.github.com/) documentation for details.
 
 1. Install [codedoc](https://codedoc.cc/):
    ```shell
