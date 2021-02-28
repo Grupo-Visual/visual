@@ -1,143 +1,16 @@
-# Code Features
+# Algovis
 
-This is a quick overview of codedoc specific features at your disposal in markdown
-`code` elements. For a complete list, please checkout the [official documentation](https://codedoc.cc).
-You can also take a look at `docs/md/docs/code-features.md` to see the markdown behind this page.
+> Visualizar algunos conceptos de computación visual como los [algoritmos de detección de superficies visibles](https://en.wikipedia.org/wiki/Hidden_surface_determination), las [projecciones 3D](https://en.wikipedia.org/wiki/3D_projection) o el [algoritmo de rasterización de un triángulo](https://fgiesen.wordpress.com/2013/02/06/the-barycentric-conspirac/)
 
-> :Buttons
-> > :Button label=Official Docs, url=https://codedoc.cc
+## Tasks
 
-<br>
+[p5.quadrille.js](https://github.com/objetos/p5.quadrille.js)
 
-> ⚠️⚠️
-> Do not forget to **REMOVE THIS PAGE** from your actual documentation!
-> ⚠️⚠️
-
-<hr>
-
-## Hints
-
-A comment with the following format will cause a hint to be displayed on-hover:
-
-> `// --> some hint here`
-
-```tsx | index.tsx
-import { Renderer } from '@connectv/html';                       // --> there is a hint on this line
-
-const MyComp = ({ name }, renderer) => <div>Hellow {name}!</div> // --> there is also a hint on this line
-
-const renderer = new Renderer();
-renderer.render(
-  <fragment>
-    <MyComp name='World'/>
-    <MyComp name='Fellas'/>                                      {/* --> also this is a hint */}
-  </fragment>
-)
-.on(document.body);
-```
-
-<br>
-
-The following syntax styles are supported:
-
-
-```go
-"// --> standard one-liner" // --> standard one-liner
-```
-
-```java
-"/* --> standard multi-liner */" /* --> standard multi-liner */
-```
-
-```py
-"# --> python/bash comments" # --> python/bash comments
-```
-
-```md
-<‌!--> html comments --> <!--> html comments -->
-```
-
-
-<hr>
-
-## References
-
-Add a comment with following format in the code will show a link on-hover over the line:
-
-> `// @see https://www.google.com`
-
-```tsx
-import { Renderer } from '@connectv/html';                       // @see https://github.com/CONNECT-platform/connective-html
-```
-
-You can also use the markdown link format to give your links a title:
-
-````md | --no-wmbar
-```
-import { Renderer } from '@connectv/html'; // @see [CONNECTIVE HTML Docs](https://github.com/CONNECT-platform/connective-html)
-```
-````
-```tsx
-import { Renderer } from '@connectv/html';                       // @see [CONNECTIVE HTML Docs](https://github.com/CONNECT-platform/connective-html)
-```
-
-You can also use these references to refer to another tab in a tab-component:
-
-```md | some-doc.md
-> :Tabs
-> > :Tab title=First Tab
-> >
-> > ```tsx
-> > import { func } from './other'; // @see tab:Second Tab
-> >
-> > func(); // --> good stuff will happen now
-> > ```
->
-> > :Tab title=Second Tab
-> >
-> > ```tsx
-> > export function func() {
-> >   console.log('Good Stuff!');
-> > }
-> > ```
-```
-<br>
-
-> :Tabs
-> > :Tab title=First Tab
-> >
-> > ```tsx
-> > import { func } from './other'; // @see tab:Second Tab
-> >
-> > func(); // --> good stuff will happen now
-> > ```
->
-> > :Tab title=Second Tab
-> >
-> > ```tsx
-> > export function func() {
-> >   console.log('Good Stuff!');
-> > }
-> > ```
-
-Similar syntax styles to hints are supported for references as well:
-
-
-```js
-"// @‌see [random stuff](https://www.randomlists.com/things)" // @see [random stuff](https://www.randomlists.com/things)
-```
-
-```go
-"/* @‌see https://google.com */" /* @see https://google.com */
-```
-
-```python
-"#@see https://github.com" #@see https://github.com
-```
-
-```html
-<!-- @‌see [the first page](/) --> <!-- @see [the first page](/) -->
-```
-
+## Referencias:
+    1. [Algorithm Visualization: The State of the Field](https://dl.acm.org/citation.cfm?id=1821997)
+    2. [Algovis](https://github.com/enjalot/algovis)
+    3. [Visualizing algorithms](https://bost.ocks.org/mike/algorithms/)
+    4. [Rasterization stage](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/rasterization-stage)
+    5. [Depth-map demo](https://github.com/VisualComputing/nub/tree/master/examples/demos/DepthMap)
 
 > :ToCPrevNext

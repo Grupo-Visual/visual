@@ -4,37 +4,24 @@ Welcome to the [UN / DISI](http://www.ingenieria.unal.edu.co/dependencias/depart
 
 ## Goal
 
-Learn the rendering and manipulation processes of a digital image using a modern PC arch which comprises a CPU and a GPU.
-
- of  Estudiar el proceso de producción y manipulación de una imagen digital que sirve para dar sustento a una aplicación visual moderna, empleando una arquitectura actual de computador. Respecto de dicho proceso buscamos discernir:
-
-* La relación con la visión humana.
-* Sus entradas: modelos geométricos, datos, imágenes y gestos.
-* Sus etapas, identificando las programables y el modo de hacerlo.
-
-Applications
+To study the process of creation and manipulation of a digital image of a modern visual application, using current hardware.
 
 ## Methodology
 
-[Activa](https://en.wikipedia.org/wiki/Active_learning)-[colaborativa](https://github.com/VisualComputing/Introduction) en el estudio y desarrollo de:
+[Active-learning](https://en.wikipedia.org/wiki/Active_learning) using [free-software](https://en.wikipedia.org/wiki/Free_software) to develop:
 
-* [Presentaciones](https://github.com/orgs/VisualComputing/teams/presentations/repositories).
-* [Software](https://github.com/remixlab/proscene).
-* [Colaboraciones](collaborations.md).
-* Texto referencia (pendiente).
+* [Slides](https://github.com/orgs/VisualComputing/teams/presentations/repositories).
+* [nub](https://github.com/VisualComputing/nub) and [p5.nub.js](https://github.com/VisualComputing/p5.nub.js).
+* [p5.quadrille.js](https://github.com/objetos/p5.quadrille.js).
 
 ## Grading
 
-* Workshops: código, presentación oral _in situ_, apropiada atribución de las fuentes (código y literatura)  e informe.
-* Quizzes.
-
-<!---  
-Observaciones:
-
-* Los quizzes se evaluan cuantitativamente.
-* Los talleres, cualitativamente como _completados_.
-* Un taller se completa mediante sustentación oral _in situ_.
---->
+1. Quizzes
+2. Workshops [blog posts](https://en.wikipedia.org/wiki/Edublog)-like reports produced with [codedoc](https://codedoc.cc/) and [p5.js](https://p5js.org/) and having a basic research structure:
+  * Problem statement
+  * Background
+  * Code (solution) & results
+  * Conclusions & future work
 
 ## Outline
 
@@ -55,7 +42,7 @@ Observaciones:
 
 ## Hacking
 
-The page is to be developed at the `main` branch of your `https://github.com/<gh-username>/vc` repo using [codedoc](https://codedoc.cc/), and the resulting webpage served from the `gh-pages` branch of that repo at: `https://<gh-username>.github.io/vc/`. Refer to the [gh-pages](https://pages.github.com/) documentation for details.
+The webpage is to be developed at the `main` branch of your `https://github.com/<gh-username>/vc` repo using [codedoc](https://codedoc.cc/), and the resulting webpage served from the `gh-pages` branch of that repo at: `https://<gh-username>.github.io/vc/`. Refer to the [gh-pages](https://pages.github.com/) documentation for details.
 
 1. Install [codedoc](https://codedoc.cc/):
    ```shell
