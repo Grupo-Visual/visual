@@ -59,7 +59,7 @@ Observaciones:
    ```shell
    npm i -g @codedoc/cli
    ```
-2. Fork and clone the [vc repo](https://github.com/VisualComputing/vc/) using the github web interface, or the [cli](https://cli.github.com/1):
+2. Fork and clone the [vc repo](https://github.com/VisualComputing/vc/) using the github web interface, or the [cli](https://cli.github.com/):
    ```shell
    gh repo clone VisualComputing/vc
    cd vc
@@ -71,13 +71,13 @@ Observaciones:
    ```shell
    codedoc install
    ```
-4. Edit your `<gh-username>` at the `github` section of the `.codedoc/config.ts` file replacing `visualcomputing` with your `<gh-username>`.
+4. Edit your `<gh-username>` at the `github` section of the `.codedoc/config.ts` file, replacing `visualcomputing` with your `<gh-username>`.
    ```ts
    export const config = configuration({
      // ..
      misc: {
        github: {
-         user: 'visualcomputing', // --> name of the user on GitHub owning the repo
+         user: 'gh-username', // --> name of the user on GitHub owning the repo
          // ..
        }
      },
@@ -88,7 +88,7 @@ Observaciones:
    ```shell
    codedoc serve
    ```
-   *Note: *
+   *Note:* to also [run the p5.js sketches locally](https://codedoc.cc/docs/config/output#build-files-on-git) link `dist/docs/sketches` to the `sketches` folder.
    ```shell
    cd dist/docs/
    ln -s ../../docs/sketches
@@ -97,5 +97,6 @@ Observaciones:
    ```shell
    git push #@see https://github.com/VisualComputing/vc/blob/main/.github/workflows/deploy-to-gh-pages.yml
    ```
+   The page will soon be available at: `https://<gh-username>.github.io/vc/`
 
 > :ToCPrevNext
