@@ -1,8 +1,12 @@
 [Home](/)
-[Markdown Cheat Sheet](/docs/cheat-sheet)
-[Code Features](/docs/code-features)
 
-> :Collapse label=Workshoops
+> :Collapse label=Workshops
+> 
+> [Imaging & Video](/docs/workshops/imaging)
+> [Rendering](/docs/workshops/rendering)
+> [Algovis](/docs/workshops/algovis)
+> [Computer Graphics](/docs/workshops/cg)
+> [HCI](/docs/workshops/hci)
 
 > :Collapse label=P5 Code Snippets
 > 
@@ -13,8 +17,3 @@
 > [3D](/docs/snippets/3d)
 > [Libs](/docs/snippets/lib)
 > [Sound](/docs/snippets/sound)
-
-<br><br>
-
-To add links to your other documents, simply
-modify contents of `docs/md/_toc.md`.
