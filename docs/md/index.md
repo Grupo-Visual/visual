@@ -55,20 +55,47 @@ Observaciones:
 
 ## Hacking
 
-1. Install [codedoc](https://codedoc.cc/).
-   ```shell | terminal
+1. Install [codedoc](https://codedoc.cc/):
+   ```shell
    npm i -g @codedoc/cli
    ```
-2. Clone the [vc repo](https://github.com/VisualComputing/vc/).
-   ```shell | terminal
-   git clone https://github.com/VisualComputing/vc
+2. Fork and clone the [vc repo](https://github.com/VisualComputing/vc/) using the github web interface, or the [cli](https://cli.github.com/1):
+   ```shell
+   gh repo clone VisualComputing/vc
+   cd vc
+   # --> Created fork will be <gh-username>/vc:
+   gh repo fork #@see https://cli.github.com/manual/gh_repo_fork
    ```
    Note that the cloned repo already contains the [codedoc-p5-plugin](https://github.com/VisualComputing/vc/tree/main/.codedoc/components/p5) which is been developed separately [here](https://github.com/VisualComputing/codedoc-p5-plugin).
-3. Install  `codedoc` dependencies.
-   ```shell | terminal
-   cd vc
+3. Install  `codedoc` dependencies (don't forget to `cd vc` if you haven't already):
+   ```shell
    codedoc install
    ```
-4. Edit 
+4. Edit your `<gh-username>` at the `github` section of the `.codedoc/config.ts` file replacing `visualcomputing` with your `<gh-username>`.
+   ```ts
+   export const config = configuration({
+     // ..
+     misc: {
+       github: {
+         user: 'visualcomputing', // --> name of the user on GitHub owning the repo
+         // ..
+       }
+     },
+     // ..
+   });
+   ```
+5. Run locally with:
+   ```shell
+   codedoc serve
+   ```
+   *Note: *
+   ```shell
+   cd dist/docs/
+   ln -s ../../docs/sketches
+   ```
+6. Deploy to github:
+   ```shell
+   git push #@see https://github.com/VisualComputing/vc/blob/main/.github/workflows/deploy-to-gh-pages.yml
+   ```
 
 > :ToCPrevNext
