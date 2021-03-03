@@ -1,6 +1,6 @@
 # P5 inline code
 
-[here](https://p5js.org/examples/structure-recursion.html)
+Adapted from [here](https://p5js.org/examples/structure-recursion.html).
 
 > :P5 width=720, height=560
 >
@@ -58,7 +58,7 @@ note that the above sketch code is included within the markdown itself like this
 
 > :P5 sketch=/docs/sketches/colors.js, width=710, height=400
 
-The markdown of the above sketch looks like this:
+The markdown of the above sketch looks like this (check the [component specs](/docs/snippets/component) for details):
 
 ```markdown
 > :P5 sketch=/docs/sketches/colors.js, width=710, height=400
