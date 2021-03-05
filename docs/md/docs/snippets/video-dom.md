@@ -1,6 +1,6 @@
 # Playing video on separate `dom`
 
-Too from [here](https://p5js.org/reference/#/p5/createVideo).
+Took from [here](https://p5js.org/reference/#/p5/createVideo).
 
 > :P5 sketch=/docs/sketches/video-dom.js, width=320, height=240
 
