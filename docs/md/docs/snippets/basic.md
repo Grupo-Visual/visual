@@ -54,7 +54,7 @@ note that the above sketch code is included within the markdown itself like this
 
 # P5 instance mode
 
-[here](https://p5js.org/examples/color-relativity.html)
+Adapted from [here](https://p5js.org/examples/color-relativity.html)
 
 > :P5 sketch=/docs/sketches/colors.js, width=710, height=400
 
