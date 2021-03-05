@@ -1,3 +1,3 @@
 # Visual Computing Template
 
-Hacking instructions.
+Check the [live site](https://visualcomputing.github.io/vc/) for the information.
