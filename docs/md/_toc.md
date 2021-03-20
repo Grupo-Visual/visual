@@ -2,9 +2,9 @@
 
 > :Collapse label=Workshops
 > 
-> [Imaging & Video](/docs/workshops/imaging)
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
+> [Arte ASCII](/docs/workshops/ArteASCII)
 > [Computer Graphics](/docs/workshops/cg)
 > [HCI](/docs/workshops/hci)
 
@@ -20,4 +20,4 @@
 
 > :Collapse label=Members
 > 
-> [NN](/docs/members/nn)
+> [Diego Tovar](/docs/members/diego)
