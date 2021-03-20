@@ -1,3 +1,3 @@
-# Visual Computing Template
+# Visual Computing
 
-Check the [live site](https://visualcomputing.github.io/vc/) for the information.
+Check the  for the information.
