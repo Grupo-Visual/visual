@@ -25,7 +25,7 @@ export const config = configuration({
   misc: {
     github: {
       user: 'Grupo-Visual',     // --> name of the user on GitHub owning the repo
-      repo: 'visual',                  // --> name of the repo on GitHub
+      repo: 'vc',                  // --> name of the repo on GitHub
       action: 'Star',              // --> action of the GitHub button
       count: false,                // --> whether to show the `count` on the GitHub button
       large: true,                 // --> whether to show a `large` GitHub button
