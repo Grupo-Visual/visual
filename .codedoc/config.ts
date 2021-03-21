@@ -15,17 +15,17 @@ export const config = configuration({
   dest: {                          // @see /docs/config/output
     html: 'dist',                  // --> the base folder for HTML files
     assets: 'dist',                // --> the base folder for assets
-    namespace: '/vc',              // --> project namespace
+    namespace: '/visual',              // --> project namespace
   },
   page: {
     title: {
-      base: 'vc'                   // --> the base title of your doc pages
+      base: 'visual'                   // --> the base title of your doc pages
     }
   },
   misc: {
     github: {
       user: 'Grupo-Visual',     // --> name of the user on GitHub owning the repo
-      repo: 'vc',                  // --> name of the repo on GitHub
+      repo: 'visual',                  // --> name of the repo on GitHub
       action: 'Star',              // --> action of the GitHub button
       count: false,                // --> whether to show the `count` on the GitHub button
       large: true,                 // --> whether to show a `large` GitHub button
