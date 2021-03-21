@@ -1,3 +1,3 @@
-# Visual Computing
+# Visual Computing Page
 
-Check the  for the information.
+Check the [Link](https://grupo-visual.github.io/visual/) for the information.
