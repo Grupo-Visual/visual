@@ -1,7 +1,7 @@
 [Home](/)
 
 > :Collapse label=Workshops
-> 
+> [Imaging](/docs/workshops/imaging)
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
 > [Arte ASCII](/docs/workshops/ArteASCII)
@@ -22,3 +22,4 @@
 > 
 > [Diego Tovar](/docs/members/diego)
 > [Edisson Prieto](/docs/members/EdissonPrieto)
+> [Julián Beltran](/docs/members/JulianBeltran)
