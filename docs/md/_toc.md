@@ -1,6 +1,7 @@
 [Home](/)
 
 > :Collapse label=Workshops
+>
 > [Imaging](/docs/workshops/imaging)
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
