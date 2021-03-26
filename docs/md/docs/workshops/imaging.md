@@ -1,7 +1,7 @@
 # Image and video processing
 
 ## Filtro de negativo
-Aplicando un filtro de negativo a una imagen. Para este proceso, se cargaron todos los pixeles de la imagen a través del método loadpixels(), luego, se aplicó la fórmula $$\displaystyle RGBNegative =(255 - R, 255 - G, 255 - B)$$ obteniendo los resultados mostrados en la imagen.
+Aplicando un filtro de negativo a una imagen. Para este proceso, se cargaron todos los pixeles de la imagen a través del método loadpixels(), luego, se aplicó la fórmula  RGBNegative =(255 - R, 255 - G, 255 - B) obteniendo los resultados mostrados en la imagen.
 
 ![Negative](/docs/sketches/imageNegative.jpg)
 
@@ -36,7 +36,7 @@ void draw() {
 La conversión a grises se llevó a cabo a través de diferentes métodos.
 
 ### Promedio aritmético RGB
-El primer método consiste en hayar un promedio aritmético de cada uno de los pixeles a través de la fórmula $$\displaystyle Gray =\frac{R+G+B}{3}$$
+El primer método consiste en hayar un promedio aritmético de cada uno de los pixeles a través de la fórmula  Gray = (R+G+B)/3
 
 Se obtuvo el siguiente resultado
 ![GreyScaleAvg](/docs/sketches/greyscaleAvg.png)
@@ -72,14 +72,14 @@ void draw() {
 Existen variantes del método Luma, que se basan en los pesos que se le da a cada uno de los componentes en la ecuación, en la implementación realizada, se hace uso de las siguientes variantes:
 
 De arriba hacia abajo:
-Primer cuadrante: $$\displaystyle Y'_{\text{601}}=0.2989R+0.5870G+0.1140B$$ SDTV
-Segundo cuadrante: $$\displaystyle Y'_{\text{240}}=0.212R+0.701G+0.087B$$ Adobe
-Tercer cuadrante: $$\displaystyle Y'_{\text{709}}=0.2126R+0.7152G+0.0722$$ HDTV
-Cuarto cuadrante : $$\displaystyle Y'_{\text{709}}=0.2627R+0.0.6780G+0.0593$$ UHDTV, HDR
+Primer cuadrante: Y'601 = (0.2989 * R) + (0.5870 * G)+ (0.1140 * B) SDTV
+Segundo cuadrante: Y'240 = (0.212 * R) + (0.701 * G) + (0.087 * B)  Adobe
+Tercer cuadrante: Y'709 = (0.2126 * R) + (0.7152 * G) +(0.0722 * B) HDTV
+Cuarto cuadrante : Y'709 = (0.2627 * R) + (0.6780 * G) + (0.0593 * B ) UHDTV, HDR
 
 Este valor Y' se usa para los valores de R, G y B en cada uno de los pixeles para cada caso.
 
-![GreyScaleLuma](/docs/sketches/greyScaleLuma.png)
+![GreyScaleLuma](/docs/sketches/grayScaleLuma.png)
 
 #### Código en Processing:
 ```processing
@@ -150,7 +150,7 @@ void draw() {
 
 ### Método HSL
 El método HSL consiste en hallar el promedio de el máximo y el mínimo de los valores entre R,G y B
-![GreyScaleHSV](/docs/sketches/greyScaleHSL.png)
+![GreyScaleHSL](/docs/sketches/greyScaleHSL.png)
 
 #### Código en Processing:
 ```processing
