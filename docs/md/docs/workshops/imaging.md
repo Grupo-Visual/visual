@@ -72,10 +72,10 @@ void draw() {
 Existen variantes del método Luma, que se basan en los pesos que se le da a cada uno de los componentes en la ecuación, en la implementación realizada, se hace uso de las siguientes variantes:
 
 De arriba hacia abajo:
-Primer cuadrante: Y'601 = (0.2989 * R) + (0.5870 * G)+ (0.1140 * B) SDTV
-Segundo cuadrante: Y'240 = (0.212 * R) + (0.701 * G) + (0.087 * B)  Adobe
-Tercer cuadrante: Y'709 = (0.2126 * R) + (0.7152 * G) +(0.0722 * B) HDTV
-Cuarto cuadrante : Y'709 = (0.2627 * R) + (0.6780 * G) + (0.0593 * B ) UHDTV, HDR
+- Y'601 = (0.2989 * R) + (0.5870 * G)+ (0.1140 * B) SDTV
+- Y'240 = (0.212 * R) + (0.701 * G) + (0.087 * B)  Adobe
+- Y'709 = (0.2126 * R) + (0.7152 * G) +(0.0722 * B) HDTV
+- Y'709 = (0.2627 * R) + (0.6780 * G) + (0.0593 * B ) UHDTV, HDR
 
 Este valor Y' se usa para los valores de R, G y B en cada uno de los pixeles para cada caso.
 
