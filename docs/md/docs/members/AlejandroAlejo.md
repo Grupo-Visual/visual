@@ -8,6 +8,10 @@ Hacker, estudiante de Ingeniería de sistemas y computación de la Universidad N
 
 Hacking ético, computación forense, hardware hacking, desarrollo frontend.
 
+## Contributions
+
+La importancia de la oscuridad en Internet [Carma Journal]
+
 ## Hobbies
 
 Videojuegos, BJJ, ver series, cocinar y enseñar
