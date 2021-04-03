@@ -15,3 +15,9 @@ La importancia de la oscuridad en Internet [Carma Journal]
 ## Hobbies
 
 Videojuegos, BJJ, ver series, cocinar y enseñar
+
+# Ilusión de los Pasos
+
+Tomado de [aquí](https://p5js.org/es/examples/simulate-stepping-feet-illusion.html)
+
+> :P5 sketch=/docs/sketches/ilusionAlejo.js, width=720, height=400
