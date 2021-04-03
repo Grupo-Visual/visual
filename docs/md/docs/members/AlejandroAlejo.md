@@ -24,7 +24,7 @@ Aquí podemos observar un fenomeno conocido como la ilusión de los pasos (Stepp
 
 Para comprobar que ambos se mueven a la misma velocidad dar click en la animación.
 
-> :P5 sketch=/docs/sketches/ilusionAlejo.js, width=720, height=400
+> :P5 sketch=/docs/sketches/ilusionAlejo.js
 
 Tomado de [aquí](https://p5js.org/es/examples/simulate-stepping-feet-illusion.html)
 
