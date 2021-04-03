@@ -22,7 +22,7 @@ Videojuegos, BJJ, ver series, cocinar y enseñar
 
 Aquí podemos observar un fenomeno conocido como la ilusión de los pasos (Stepping feet illusion en inglés). Consiste de dos "buses" (rectangulos) que se van moviendo a lo largo de una "calle" que posee rayas blancas y negras, los buses se mueven a igual vvelocidad, pero su velocidad percibida varia, dando la percepción de que uno se mueve más rápido que otro.
 
-> :P5 sketch=/docs/sketches/ilusionAlejo.js, width=720, height=400
+> :P5 sketch=/docs/sketches/ilusionAlejo.js, width=720, height=255
 
 Tomado de [aquí](https://p5js.org/es/examples/simulate-stepping-feet-illusion.html)
 
