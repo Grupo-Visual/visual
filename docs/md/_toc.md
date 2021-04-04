@@ -25,3 +25,4 @@
 > [Edisson Prieto](/docs/members/EdissonPrieto)
 > [Julián Beltran](/docs/members/JulianBeltran)
 > [Alejandro Alejo](/docs/members/AlejandroAlejo)
+> [Camilo Vargas](/docs/members/CamiloVargas)
