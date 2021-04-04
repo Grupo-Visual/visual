@@ -21,8 +21,8 @@
 
 > :Collapse label=People
 > 
-> [Diego Tovar](/docs/members/diego)
-> [Edisson Prieto](/docs/members/EdissonPrieto)
-> [Julián Beltran](/docs/members/JulianBeltran)
 > [Alejandro Alejo](/docs/members/AlejandroAlejo)
+> [Julián Beltran](/docs/members/JulianBeltran)
+> [Edisson Prieto](/docs/members/EdissonPrieto)
+> [Diego Tovar](/docs/members/diego)
 > [Camilo Vargas](/docs/members/CamiloVargas)

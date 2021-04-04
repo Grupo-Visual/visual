@@ -2,7 +2,7 @@ let img;
 
 function setup(){
   createCanvas(720, 400);
-  img = loadImage('/images/000.jfif');
+  img = loadImage('/images/escudo.png');
 }
 
 function draw(){
