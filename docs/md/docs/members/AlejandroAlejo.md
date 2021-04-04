@@ -20,7 +20,7 @@ Videojuegos, BJJ, ver series, cocinar y enseñar
 
 # Ilusión de los Pasos
 
-Aquí podemos observar un fenomeno conocido como la ilusión de los pasos (Stepping feet illusion en inglés). Consiste de dos "buses" (rectangulos) que se van moviendo a lo largo de una "calle" que posee rayas blancas y negras, los buses se mueven a igual vvelocidad, pero su velocidad percibida varia, dando la percepción de que uno se mueve más rápido que otro. 
+Aquí podemos observar un fenomeno conocido como la ilusión de los pasos (Stepping feet illusion en inglés). Consiste de dos "buses" (rectangulos) que se van moviendo a lo largo de una "calle" que posee rayas blancas y negras, los buses se mueven a igual velocidad, pero su velocidad percibida varia, dando la percepción de que uno se mueve más rápido que otro. 
 
 Para comprobar que ambos se mueven a la misma velocidad dar click en la animación.
 
@@ -35,6 +35,8 @@ Stuart Anstis demostró la ilusión por primera vez en 2003. Propuso que los con
 ## Causas 
 
 Esta ilusión es causada por la diferencia de contrastes (luminosidad) entre los objetos en movimiento y su fondo. Mientras que el fondo tiene rayas negras y blancas, el contraste cambia de una linea a la siguiente. Cabe resaltar que no se pueden escoger colores arbitrarios para los "buses", sino que debe haber una diferencia de luminancia entre los dos, uno debe ser brillante y el otro oscuro.
+
+> :P5 sketch=/docs/sketches/prueba.js
 
 ## Código
 
