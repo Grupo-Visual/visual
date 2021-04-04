@@ -7,9 +7,9 @@ let capture;
 let newCapture;
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(500, 500);
   capture = createCapture(VIDEO);
-  capture.hide();
+  //capture.hide();
 }
 
 function draw() {
