@@ -4,8 +4,8 @@ De forma similar, todos los métodos mostrados anteriormente pueden ser aplicado
 
 ## Negativo
 
-> :P5 sketch=/docs/sketches/videoNegative.js, width=500, height=500
+> :P5 sketch=/docs/sketches/videoNegative.js, width=600, height=600
 
 ## Conversión a grises
 
-> :P5 sketch=/docs/sketches/videoGray.js, width=500, height=500
+> :P5 sketch=/docs/sketches/videoGray.js, width=600, height=600
