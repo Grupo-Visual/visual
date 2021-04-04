@@ -3,6 +3,7 @@
 > :Collapse label=Workshops
 >
 > [Imaging - Filters](/docs/workshops/filters)
+> [Video - Filters](/docs/workshops/filtersVideo)
 > [Mosaico](/docs/workshops/mosaico)
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
