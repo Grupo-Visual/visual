@@ -21,11 +21,11 @@ function draw() {
       var r = pixels[index+0];
       var g = pixels[index+1];
       var b = pixels[index+2];
-   
+      var a = pixels[index+3];     
               
-      pixels[index+0] = 255 - r;
-      pixels[index+1] = 255 - g;
-      pixels[index+2] = 255 - b;
+      pixels[index+0] = (r+g+b)/3;
+      pixels[index+1] = (r+g+b)/3;
+      pixels[index+2] = (r+g+b)/3;
     }
   }
   updatePixels();
