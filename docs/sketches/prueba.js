@@ -1,8 +1,8 @@
 let img;
 
 function setup(){
-  createCanvas(720, 400);
-  img = loadImage('/images/escudo.png');
+  createCanvas(640, 400);
+  img = loadImage('/visual/docs/sketches/images/000.jfif');
 }
 
 function draw(){
