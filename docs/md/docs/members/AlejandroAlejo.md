@@ -36,8 +36,6 @@ Stuart Anstis demostró la ilusión por primera vez en 2003. Propuso que los con
 
 Esta ilusión es causada por la diferencia de contrastes (luminosidad) entre los objetos en movimiento y su fondo. Mientras que el fondo tiene rayas negras y blancas, el contraste cambia de una linea a la siguiente. Cabe resaltar que no se pueden escoger colores arbitrarios para los "buses", sino que debe haber una diferencia de luminancia entre los dos, uno debe ser brillante y el otro oscuro.
 
-> :P5 sketch=/docs/sketches/prueba.js
-
 ## Código
 
 ```js
