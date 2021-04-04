@@ -1,11 +1,19 @@
 # Arte ASCII
 
+#### Propósito
+
+Arte ASCII consiste en la formación de imágenes o arte a partir de los caracteres disponibles en la tabla ASCII.
+
+#### Background
+
+Existen varias formas de hacer arte con imágenes siguiendo esta idea, al igual que la tabla ASCII es útil, se puede utilizar una tabla que cumpla con la misma finalidad de codificar caracteres, por ejemplo, la tabla ANSI que es otro estándar de codificación.
+
 #### Código
 
 ```java
 PImage img;
 
-int resolution = 6;
+int resolution = 7;
  
 char[] ascii;
  
@@ -50,5 +58,12 @@ void asciify() {
 #### Resultado
 
 ![Resultado Arte Ascii](/docs/sketches/ResultadoArteAscii.PNG)
+
+<p align="center"><img src="/docs/sketches/ResultadoArteAscii2.PNG"/></p>
+
+#### Conclusiones y trabajo futuro
+
+El Arte ASCII permite representar imágenes a través de caracteres, esto fue útil cuando las impresoras no eran muy avanzadas, además cuando el correo electrónico empezó surge como necesidad de representar una imagen.
+
 
 > :ToCPrevNext
