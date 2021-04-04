@@ -8,7 +8,7 @@ function setup() {
 
   // create an image using the p5 dom library
   // call modelReady() when it is loaded
-  img = createImg("/vc/docs/sketches/lenna.png", imageReady);
+  img = createImg("/visual/docs/sketches/lenna.png", imageReady);
   // set the image size to the size of the canvas
 
   img.hide(); // hide the image in the browser
