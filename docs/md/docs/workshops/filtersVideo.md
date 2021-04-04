@@ -7,7 +7,7 @@ De forma similar, todos los métodos mostrados anteriormente pueden ser aplicado
 > :P5 sketch=/docs/sketches/videoNegative.js, width=500, height=500
 
 ### Código en P5js
-```p5js
+```javascript
 let capture;
 let newCapture;
 
@@ -43,7 +43,7 @@ function draw() {
 > :P5 sketch=/docs/sketches/videoGray.js, width=500, height=500
 
 ### Código en P5js
-```
+```javascript
 let capture;
 let newCapture;
 
