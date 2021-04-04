@@ -1,5 +1,11 @@
 # Image and video processing
 
+## Propósito
+Aplicar a imágenes un filtro de negativo, así como conversión a escala de grises a través de diferentes métodos: RGB, Luma, entre otros.
+
+## Background
+Existen diferentes métodos o fórmulas para la conversión de las imágenes según los criterios mencionados. Cada una de ellas tiene sus características particulares, como por ejemplo: algunas resaltan mejor el brillo de las imágenes al realizar la conversión. La fórmula correspondiente a cada uno de los métodos se encuentra presente en el apartado dedicado a los mismos.
+
 ## Filtro de negativo
 Aplicando un filtro de negativo a una imagen. Para este proceso, se cargaron todos los pixeles de la imagen a través del método loadpixels(), luego, se aplicó la fórmula  RGBNegative =(255 - R, 255 - G, 255 - B) obteniendo los resultados mostrados en la imagen.
 
@@ -178,5 +184,8 @@ void draw() {
   updatePixels();
 }
 ```
+
+## Conclusiones y trabajo futuro
+Hay bastantes métodos para la conversión de imágenes y/o aplicación de filtros. A pesar de que varias de ellas varían de forma mínimo, como se mencionó anteriormente, cada método tiene sus ventajas en aspectos muy particulares frente a los otros. Resultaría pertinente realizar diversas pruebas con amplios bancos de imágenes que permitieran clasificar de alguna manera los diferentes métodos en términos de el uso apropiado de cada uno en función del resultado que se desea obtener.
 
 > :ToCPrevNext

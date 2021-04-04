@@ -2,9 +2,7 @@
 
 > :Collapse label=Workshops
 >
-> :Collapse label=Imaging
-> 
-> [Filters](/docs/workshops/filters)
+> [Imaging - Filters](/docs/workshops/filters)
 > [Mosaico](/docs/workshops/mosaico)
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
