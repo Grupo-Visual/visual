@@ -3,6 +3,7 @@
 > :Collapse label=Workshops
 >
 > [Imaging](/docs/workshops/imaging)
+> [Mosaico](/docs/workshops/mosaico)
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
 > [Arte ASCII](/docs/workshops/ArteASCII)
