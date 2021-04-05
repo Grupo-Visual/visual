@@ -1,6 +1,6 @@
-# Aplicando los filtros a vídeo
+# Vídeo - Filtros
 
-De forma similar, todos los métodos mostrados anteriormente pueden ser aplicados también a vídeos. Se mostrará algunos de ellos como ejemplo, las fórmulas (o métodos) de conversión usados son los mismos a los mostrados en la sección de [Imaging-filter](/docs/workshops/filters)
+De forma similar, todos los métodos mostrados anteriormente pueden ser aplicados también a vídeos. Se mostrarán algunos de ellos como ejemplo, las fórmulas (o métodos) de conversión usados son los mismos a los mostrados en la sección de [Imaging-filter](/docs/workshops/filters)
 
 ## Negativo
 
