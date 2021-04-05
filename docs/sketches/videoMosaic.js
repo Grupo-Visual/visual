@@ -166,7 +166,6 @@ function draw() {
     video.loadPixels();
     for (var y = 0; y < video.height; y++) {
         for (var x = 0; x < video.width; x++) {
-
             var index = (video.width - x + 1 + (y * video.width)) * 4;
             var r = video.pixels[index + 0];
             var g = video.pixels[index + 1];
