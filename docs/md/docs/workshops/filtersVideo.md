@@ -99,7 +99,7 @@ Conversión a escala de grises usando el método del Luma 709:
 
 ![Luma709](/docs/sketches/luma7algo.gif)
 
-Por último se presenta la conversión con el metodo HSV, en el cual el brillo es más fuerte que los otros métodos:
+Por último se presenta la conversión con el metodo HSV, en el cual el brillo es más fuerte que el producido por los métodos anteriores:
 
 ![HSV](/docs/sketches/HSV.gif)
 
@@ -146,6 +146,8 @@ void draw() {
 
 }
 ```
+&nbsp;
+
 ### - para el método Luma 601
 ```processing
 
@@ -184,6 +186,8 @@ void draw() {
 
 }
 ```
+&nbsp;
+
 ### - para el método Luma 709
 ```processing
 PImage img;
@@ -222,6 +226,8 @@ void draw() {
 }
 ```
 
+&nbsp;
+
 ### - para el método HSV
 ```processing
 PImage img;
@@ -259,5 +265,7 @@ void draw() {
 
 }
 ```
+
+&nbsp;
 
 > :ToCPrevNext
