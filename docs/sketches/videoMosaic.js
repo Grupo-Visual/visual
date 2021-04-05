@@ -160,12 +160,12 @@ function setup() {
     vScale = scaleSlider.value();
     pixelDensity(3);
     frameRate(15);
-    video = createCapture(VIDEO);
-    video.size(width / vScale, height / vScale);
 }
 
 function draw() {
     vScale = scaleSlider.value();
+    video = createCapture(VIDEO);
+    video.size(width / vScale, height / vScale);
     background(255);
     video.loadPixels();
     for (var y = 0; y < video.height; y++) {
