@@ -252,3 +252,5 @@ Los fotomosaicos son un interesante concepto de arte electrónico que ha cautiva
 La técnica utilizada en este proyecto ha permitido obtener resultados bastante cercanos a la imagen original con los parametros usados. Sin embargo, al intentar reducir el valor de la escala de reducción de la imagen para intentar obtener una imagen menos pixelada y más cercana a la original, se produce un problema de rendimiento, los fotogramas de la captura de vídeo se reducen debido al mayor número de cálculos que debe hacer el servidor.
 
 Como trabajo futuro se propone utilizar un método más optimizado para realizar los calculos de la imagen o utilizar un dispositivo con más recursos de computo. Adicionalmente, sería interesante aumentar el banco de imágenes y por ende la escala/gama de colores.
+
+> :ToCPrevNext
