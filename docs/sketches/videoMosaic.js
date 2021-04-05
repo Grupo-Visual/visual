@@ -149,7 +149,7 @@ function mapColor(color) {
 }
 
 var video;
-var vScale = 3;
+var vScale = 5;
 var arregloImagenes;
 
 function setup() {
