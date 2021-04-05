@@ -24,13 +24,13 @@ Para nuestra implementación hemos utilizado la técnica de reducir el número d
 
 ### Nuestra escala de color
 
-Como construir un banco de imagenes para todos los ***16.777.216*** colores que se pueden representar con el sistema RGB es casi imposible en el tiempo límitado del proyecto, se ha optado por construir un sistema de **125** colores basado en una representación reducidad del sistema RGB en base 5.
+Como construir un banco de imagenes para todos los ***16.777.216*** colores que se pueden representar con el sistema RGB es casi imposible en el tiempo límitado del proyecto, se ha optado por construir un sistema de **125** colores basado en una representación reducida del sistema RGB en base 5.
 
 El código de cada color R, G y B es mapeado de 0 a 255 a un rango de 0 a 4. Se han dividido los 256 valores de cada color en 4 intervalos de 51 valores cada uno y un intervalo de 52 valores; cada color en esos rangos es remplazado por el valor medio de esos intervalos y despues por un valor entre 0 y 4, en la siguiente imagen se aprecia mejor esta transformación.
 
 ![CodigoColor](/docs/sketches/codigoColor.png)
 
-Así, por ejemplo, el color RGB(123,34,204) se convertiría en RGB(125, 25, 225) y posteriormente en RGB4(2,0,4), este último se representará en el mosaico mediante la imagen "img204", que se muestra a continuación:
+Así, por ejemplo, el color RGB(123,34,204) se convertiría en RGB(125, 25, 225) y posteriormente en RGB_5(2,0,4), este último se representará en el mosaico mediante la imagen "img204", que se muestra a continuación:
 
 ![imagen204](/docs/sketches/images/204.jfif)
 
