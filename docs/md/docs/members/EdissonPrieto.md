@@ -24,7 +24,7 @@ el cúal espero llevar a un nivel avanzado.
 
 &nbsp;
 
-Fue notado por uno de los miembros del Brain and Perception Laboratory de la Universidad de Bristol, en las baldosas de la pared de una cafetería de la colina de Saint Michael, en Brístol (Reino Unido), en las cuales las lineas parecian no ser paralelas como realmente lo eran y parecian converger en una dirección alterna generando la ilusión de irse ensanchando hacia uno de los extremos, es decir que pareceb oblicuas.
+Fue notado por uno de los miembros del Brain and Perception Laboratory de la Universidad de Bristol, en las baldosas de la pared de una cafetería de la colina de Saint Michael, en Brístol (Reino Unido), en las cuales las lineas parecian no ser paralelas como realmente lo eran y parecian converger en una dirección alterna generando la ilusión de irse ensanchando hacia uno de los extremos, es decir que parecen oblicuas.
 
 >A continuación se puede apreciar el diseño de los muros de la cafetería:
 

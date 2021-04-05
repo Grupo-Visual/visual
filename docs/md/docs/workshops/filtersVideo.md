@@ -73,8 +73,10 @@ function draw() {
 }
 ```
 
+&nbsp;
+
 ## Conversión de video a escala de grises usando el método de promedio, Luma y HSV.
 
-
+![Original](/docs/sketches/original.webm)
 
 > :ToCPrevNext
