@@ -99,7 +99,7 @@ Con:
 | -1 | 8 | -1 |
 | -1 | -1 | -1 |
 
-![Resultado 1](/docs/sketches/convo1.png)
+<p align="center"><img src="/docs/sketches/convo1.png"/></p>
 
 
 Con:
@@ -110,7 +110,7 @@ Con:
 | -1 | 9 | -1 |
 | -1 | -1 | -1 |
 
-![Resultado 2](/docs/sketches/convo2.png)
+<p align="center"><img src="/docs/sketches/convo2.png"/></p>
 
 Con:
 
@@ -120,7 +120,7 @@ Con:
 | -1 | 1 | 1 |
 | 0 | 1 | 2 |
 
-![Resultado 2](/docs/sketches/convo3.png)
+<p align="center"><img src="/docs/sketches/convo3.png"/></p>
 
 
 
