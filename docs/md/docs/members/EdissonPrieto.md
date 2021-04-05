@@ -24,7 +24,7 @@ el cúal espero llevar a un nivel avanzado.
 
 &nbsp;
 
-Fue notado por uno de los miembros del Brain and Perception Laboratory de la Universidad de Bristol, en las baldosas de la pared de una cafetería de la colina de Saint Michael, en Brístol (Reino Unido), en las cuales las lineas parecian no ser paralelas como realmente lo eran y parecian converger en una dirección alterna generando la ilusión de irse ensanchando hacia uno de los extremos.
+Fue notado por uno de los miembros del Brain and Perception Laboratory de la Universidad de Bristol, en las baldosas de la pared de una cafetería de la colina de Saint Michael, en Brístol (Reino Unido), en las cuales las lineas parecian no ser paralelas como realmente lo eran y parecian converger en una dirección alterna generando la ilusión de irse ensanchando hacia uno de los extremos, es decir que pareceb oblicuas.
 
 >A continuación se puede apreciar el diseño de los muros de la cafetería:
 
@@ -36,7 +36,9 @@ Fue notado por uno de los miembros del Brain and Perception Laboratory de la Uni
 
 #### Explicación:
 
-Una de las teorías que intenta explicar este fenomeno podría ser que el cerebro no procesa la información como un todo, sino que hace una separación entre baldosas claras y oscuras de modo que las neuronas transforman las neuronas mientras las divide.
+Una de las teorías que intenta explicar este fenómeno podría ser que el cerebro no procesa la información como un todo, sino que hace una separación entre baldosas claras y oscuras de modo que para evitar el contraste entre el blanco y el negro, las neuronas tienden a convertir los claros en oscuros y los oscuros en claros.
+
+Hay una teoría llamada del bloqueo del borde y esta dice que las características visuales como luminancia, color y movimiento son mapeadas en regiones corticales separadas y que si las separaciones entre baldosas son muy delgadas están dadas las condiciones de contraste extremo en las cuales los tiempos de respuesta de los receptores retinales tienen tiempos de respuesta muy diferentes.
 
 &nbsp;
 
