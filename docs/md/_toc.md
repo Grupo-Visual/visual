@@ -10,6 +10,7 @@
 > [Arte ASCII](/docs/workshops/ArteASCII)
 > [Computer Graphics](/docs/workshops/cg)
 > [HCI](/docs/workshops/hci)
+> [Convolucion](/docs/workshops/convolucion)
 
 > :Collapse label=P5 Code Snippets
 > 
