@@ -1,15 +1,15 @@
-# Imagen y Video Convolucion
+# Imagen y Video Convolución
 
 # Image Kernel 
 
-En esta seccion presentamos la apliacion de la tecnica de procesamiento de imagenes denominada Convolucion, Kernel o Máscara para imagenes que mediante una matriz de tamaño impar se logran efectos como enfoque, desenfoque o realce. Estas denominadas marcas se logran mediante una convolucion entre un nucleo (kernel) y una imagen, cambia la intensidad de un pixel para reflejar las intencidades de los piexeles circundantes.
+En esta sección presentamos la aplicación de la técnica de procesamiento de imágenes denominada Convolución, Kernel o Máscara para imágenes en la cual mediante una matriz de tamaño impar se logran efectos como enfoque, desenfoque o realce. Estas denominadas máscaras se logran mediante una convolución entre un núcleo (kernel) y una imagen, cambiando la intensidad de un pixel para reflejar las intensidades de los piexeles circundantes.
 
-La convolucion tambien es util para afinar o mejorar algunas cualidades de las imagenes, estas mejoras son muy utiles cuandos se trata de imagenes cientificas.
+La convolución también es útil para afinar o mejorar algunas cualidades de las imágenes, estas mejoras son muy útiles cuando se trata de imágenes científicas.
 
 
 Ejemplo:
 
-El alto y el ancho del kernel no tiene que se el mismo, sin embargo si deben ser impares. Los valores contenidos dentro del kernel son los que determinan un mascara o convolucion, determinan como transformar los pixeles de la imagen original en los pixeles de la imagen resultante.
+El alto y el ancho del kernel no tiene que ser el mismo, sin embargo deben ser impares. Los valores contenidos dentro del kernel son los que determinan un máscara o convolucion, determinando cómo transformar los píxeles de la imagen original en los píxeles de la imagen resultante.
 
 Kernel 3x3
 
@@ -19,9 +19,9 @@ Kernel 3x3
 | -2 | 6 | 0 |
 | 0 | 0 | 0 |
 
-La convolucion es una operacion que se realiza pixel a pixel de la imagen, podemos acemejar el kernel como una cuadricula de numero que pasa sobre cada pixel de una imagen realizando los calculos de convolucion a lo largo de todo el camino. Si pensamos en la imagen (original) como una cuadricula de numeros por la que pasa nuestro kernel, podemos podemos presentar el siguiente caso:
+La convolución es una operación que se realiza píxel a píxel de la imagen, podemos asemejar el kernel como una cuadrícula de número que pasa sobre cada píxel de una imagen realizando los cálculos de convolución a lo largo de todo el camino. Si pensamos en la imagen (original) como una cuadrícula de números por la que pasa nuestro kernel, podemos podemos presentar el siguiente caso:
 
-Se toma una fraccion, del mismo mataño que nuestro kernel, de la gran cuadricula de la imagen original:
+Se toma una fracción, del mismo mataño que nuestro kernel, de la gran cuadrícula de la imagen original:
 
 |  |  |  |
 | :----: | :----: | :----: |
@@ -29,7 +29,7 @@ Se toma una fraccion, del mismo mataño que nuestro kernel, de la gran cuadricul
 | 0 | 1 | 1 |
 | 0 | 1 | 2 |
 
-Con un kernel de convolucion :
+Con un kernel de convolución :
 
 |  |  |  |
 | :----: | :----: | :----: |
@@ -37,7 +37,7 @@ Con un kernel de convolucion :
 | 0 | 0 | 0 |
 | 0 | 0 | -4 |
 
-Aca el nucleo de la matriz de la imagen (original), es el pixel con valor 1 en la celda (2,2), la operacion realizada:
+Acá el núcleo de la matriz de la imagen (original), es el píxel con valor 1 en la celda (2,2), la operación realizada:
 
 (4 x 0) + (0 x 0) + (0 x 0) + (0 x 0) + (0 x 1) + (0 x 1) + (0 x 0) + (-4 x 2) = -8
 
@@ -99,7 +99,7 @@ Con:
 | -1 | 8 | -1 |
 | -1 | -1 | -1 |
 
-![Resultado 1](/docs/sketches/convo1.png)
+<p align="center"><img src="/docs/sketches/convo1.png"/></p>
 
 
 Con:
@@ -110,7 +110,7 @@ Con:
 | -1 | 9 | -1 |
 | -1 | -1 | -1 |
 
-![Resultado 2](/docs/sketches/convo2.png)
+<p align="center"><img src="/docs/sketches/convo2.png"/></p>
 
 Con:
 
@@ -120,7 +120,7 @@ Con:
 | -1 | 1 | 1 |
 | 0 | 1 | 2 |
 
-![Resultado 2](/docs/sketches/convo3.png)
+<p align="center"><img src="/docs/sketches/convo3.png"/></p>
 
 
 

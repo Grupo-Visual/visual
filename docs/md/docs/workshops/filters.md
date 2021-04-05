@@ -1,4 +1,4 @@
-# Image and video processing
+# Imagen - Filtros
 
 ## Propósito
 Aplicar a imágenes un filtro de negativo, así como conversión a escala de grises a través de diferentes métodos: RGB, Luma, entre otros.
