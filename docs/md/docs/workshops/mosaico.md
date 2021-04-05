@@ -26,7 +26,7 @@ Para nuestra implementación hemos utilizado la técnica de reducir el número d
 
 Como construir un banco de imagenes para todos los ***16.777.216*** colores que se pueden representar con el sistema RGB es casi imposible en el tiempo límitado del proyecto, se ha optado por construir un sistema de **125** colores basado en una representación reducida del sistema RGB en base 5.
 
-El código de cada color R, G y B es mapeado de 0 a 255 a un rango de 0 a 4. Se han dividido los 256 valores de cada color en 4 intervalos de 51 valores cada uno y un intervalo de 52 valores; cada color en esos rangos es remplazado por el valor medio de esos intervalos y despues por un valor entre 0 y 4, en la siguiente imagen se aprecia mejor esta transformación.
+El código de cada color R, G y B es mapeado de 0 a 255 a un rango de 0 a 4. Se han dividido los 256 valores de cada color en 3 intervalos de 50 valores cada uno, uno de 51 y un intervalo de 55 valores; cada color en esos rangos es remplazado por el valor medio de esos intervalos y despues por un valor entre 0 y 4, en la siguiente imagen se aprecia mejor esta transformación.
 
 ![CodigoColor](/docs/sketches/codigoColor.png)
 
