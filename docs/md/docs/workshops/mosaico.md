@@ -247,6 +247,7 @@ A continuación puede apreciar el código anterior en ejecución (recuerde activ
 
 ## Conclusiones
 
+
 Los fotomosaicos son un interesante concepto de arte electrónico que ha cautivado a varias personas y que aún sigue vigente, algunos artististas se encuentran desarrollando más trabajos relacionados con diferentes técnicas.
 
 La técnica utilizada en este proyecto ha permitido obtener resultados bastante cercanos a la imagen original con los parametros usados. Sin embargo, al intentar reducir el valor de la escala de reducción de la imagen para intentar obtener una imagen menos pixelada y más cercana a la original, se produce un problema de rendimiento, los fotogramas de la captura de vídeo se reducen debido al mayor número de cálculos que debe hacer el servidor.
