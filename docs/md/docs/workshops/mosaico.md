@@ -34,6 +34,8 @@ Así, por ejemplo, el color RGB(123,34,204) se convertiría en RGB(125, 25, 225)
 
 ![imagen204](/docs/sketches/images/204.jfif)
 
+* Las imágenes del banco han sido descargadas del sitio [TinEye](https://labs.tineye.com/multicolr)
+
 ### Código fuente
 
 ```js
