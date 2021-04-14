@@ -1,9 +1,9 @@
 # Taller 1 - Imaging & Video
 Para el primer taller, se llevaron a cabo las siguientes tareas:
-* (Imágenes/video) [Conversión a negativo y escala de grises][]
-* (Imágenes) [Aplicación de algunas máscaras de convolución][]
-* (Imágenes) [Conversión de la imagen a ascii art][]
-* (Vídeo) [Conversión a foto-mosaico][]
+* (Imágenes/video) Conversión a negativo y escala de grises
+* (Imágenes) Aplicación de algunas máscaras de convolución
+* (Imágenes) Conversión de la imagen a ascii art
+* (Vídeo) Conversión a foto-mosaico
 
 ## Conversión a negativo y escala de grises
 La conversión de grises, así como la aplicación de filtros de negativo, fue llevada a cabo tanto para imágenes como para vídeo, de la misma manera, que es presentada en esta sección.

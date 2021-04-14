@@ -42,7 +42,7 @@ Se obtuvieron los siguientes resultados
 > >   updatePixels();
 > > }
 > > ```
->
+
 
 ### Conversión a grises por promedio RGB
 > :Tabs
@@ -81,7 +81,6 @@ Se obtuvieron los siguientes resultados
 > >   updatePixels();
 > > }
 > > ```
-> 
 
 
 ## Para vídeo pregrabado
@@ -134,7 +133,7 @@ Se obtuvieron los siguientes resultados
 > >   }
 > > }
 > > ```
->
+
 
 #### Métodos Luma
 > :Tabs
@@ -224,7 +223,7 @@ Se obtuvieron los siguientes resultados
 > > 
 > > }
 > > ```
->
+
 
 #### Método HSV
 > :Tabs
@@ -269,6 +268,6 @@ Se obtuvieron los siguientes resultados
 > >   }
 > > }
 > > ```
->
+
 
 > :ToCPrevNext
