@@ -12,6 +12,7 @@ export interface P5Options {
   id: string;
   width: string;
   height: string;
+  padding: string;
   sound: string;
   version: string;
   p5lib: string;
@@ -31,7 +32,7 @@ export function P5(
 ) {
   const classes = this.theme.classes(P5Style); // --> fetch the theme-based classes
   // custom vars
-  let version: string = options.version ? options.version : "1.2.0";
+  let version: string = options.version ? options.version : "1.3.1";
   let repo: string = config.misc?.github?.repo ? "/".concat(config.misc?.github?.repo) : "fixrepovar";
   let p5lib: string = options.p5lib ? repo.concat(options.p5lib) : 
   "https://cdnjs.cloudflare.com/ajax/libs/p5.js/".concat(version).concat("/p5.min.js");
@@ -62,11 +63,13 @@ export function P5(
     libs = options.lib5.substring(0, 4) == 'http' ? libs.concat("<script src=".concat((options.lib5).concat("></script>"))) : 
     libs.concat("<script src=".concat(repo.concat(options.lib5).concat("></script>")));
   }
-  let width: string = options.width ? options.width : "800";
-  let height: string = options.height ? options.height : "600";
-  let padding: number = 10;
-  width = (+width + 2*(padding)).toString();
-  height = (+height + 2*(padding)).toString();
+
+  let _w: number = Math.abs(parseFloat(options.width ? options.width : '1'));
+  let _h: number = Math.abs(parseFloat(options.height ? options.height : '600'));
+  let _p: number = Math.abs(parseFloat(options.padding ? options.padding : '10'));
+  let width: string = _w > 1 ? (_w + 2*(_p)).toString().concat('px') : (_w*100).toString().concat('%');
+  let height: string = _h > 1 ? (_h + 2*(_p)).toString().concat('px') : (_h*100).toString().concat('%');
+
   let id: string;
   if (options.sketch) {
     let filename = options.sketch.split("/").pop();
@@ -78,7 +81,7 @@ export function P5(
   "<script>".concat((<div>{content}</div>)!.textContent!).concat("</script>");
   return (
     <iframe
-      id={`${id}`} class={`${classes.p5} center`} style={`width: ${width}px; height: ${height}px`}
+      id={`${id}`} class={`${classes.p5} center`} style={`width: ${width}; height: ${height}`}
       srcdoc={`
         <!DOCTYPE html>
         <html>
