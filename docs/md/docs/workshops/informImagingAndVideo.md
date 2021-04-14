@@ -35,6 +35,8 @@ El método del promedio aritmético RGB consiste en hallar un promedio aritméti
 Existen variantes del método Luma, que se basan en los pesos que se le da a cada uno de los componentes en la ecuación, en la implementación realizada, se hace uso de las siguientes variantes:
 
 De arriba hacia abajo:
+> :Formula align=center
+> ```
 > (SDTV) Y'_{601} = (0.2989 \times R) + (0.5870 \times G)+ (0.1140 \times B) 
 > ```
 > :Formula align=center
@@ -48,6 +50,7 @@ De arriba hacia abajo:
 > :Formula align=center
 > ```
 > (UHDTV, HDR) Y'_{709} = (0.2627 \times R) + (0.6780 \times G) + (0.0593 \times B )
+> ```
 
 Este valor Y' se usa para los valores de R, G y B en cada uno de los pixeles para cada caso.
 
