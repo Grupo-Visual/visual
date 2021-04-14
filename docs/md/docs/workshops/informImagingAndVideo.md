@@ -39,14 +39,17 @@ De arriba hacia abajo:
 > ```
 > (SDTV) Y'_{601} = (0.2989 \times R) + (0.5870 \times G)+ (0.1140 \times B) 
 > ```
+
 > :Formula align=center
 > ```
 > (Adobe) Y'_{240} = (0.212 \times R) + (0.701 \times G) + (0.087 \times B)
 > ```
+
 > :Formula align=center
 > ```
 > (HDTV) Y'_{709} = (0.2126 \times R) + (0.7152 \times G) +(0.0722 \times B) 
 > ```
+
 > :Formula align=center
 > ```
 > (UHDTV, HDR) Y'_{709} = (0.2627 \times R) + (0.6780 \times G) + (0.0593 \times B )
