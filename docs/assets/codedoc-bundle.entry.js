@@ -21,6 +21,7 @@ import { GithubSearch } from '/home/runner/work/visual/visual/.codedoc/node_modu
 import { ToCToggle } from '/home/runner/work/visual/visual/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toggle/index.js';
 import { DarkModeSwitch } from '/home/runner/work/visual/visual/.codedoc/node_modules/@codedoc/core/dist/es6/components/darkmode/index.js';
 import { ConfigTransport } from '/home/runner/work/visual/visual/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js';
+import { TabSelector } from '/home/runner/work/visual/visual/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js';
 
 const components = {
   '1wRl0QGBs2Bzx6puUq24DA==': ToCPrevNext,
@@ -28,7 +29,8 @@ const components = {
   '3qIkhEyDQfevE84Xh+QCuQ==': GithubSearch,
   'KxGCmnpuJ3rKhpRhNGyeQw==': ToCToggle,
   'V1NAtw0nugVAv0FDhWZMfg==': DarkModeSwitch,
-  'dn74F03Ba3wuvwcpc93FMw==': ConfigTransport
+  'dn74F03Ba3wuvwcpc93FMw==': ConfigTransport,
+  'Eba88ac7EemqLr1CKXhbJQ==': TabSelector
 };
 
 const renderer = getRenderer();
