@@ -6,6 +6,7 @@
 
 Se obtuvieron los siguientes resultados
 
+### Negativo
 > :Tabs
 > > :Tab title=Negativo
 > > 
@@ -42,11 +43,14 @@ Se obtuvieron los siguientes resultados
 > > }
 > > ```
 >
-> > :Tab title=Conversión a grises en vivo
+
+### Conversión a grises por promedio RGB
+> :Tabs
+> > :Tab title=Promedio RGB
 > > 
 > > > :P5 sketch=/docs/sketches/videoGray.js, width=500, height=500
 >
-> > :Tab title=P5js Conversión a grises en vivo
+> > :Tab title=P5js
 > > 
 > > ```javascript
 > > let capture;
@@ -82,6 +86,8 @@ Se obtuvieron los siguientes resultados
 
 ## Para vídeo pregrabado
 
+### Conversión a grises
+#### Por promedio RGB
 > :Tabs
 > > :Tab title= Vídeo original
 > >
@@ -91,7 +97,7 @@ Se obtuvieron los siguientes resultados
 > >
 > > ![Promedio](/docs/sketches/grayaverage.gif)
 >
-> > :Tab title=Processing Promedio RGB
+> > :Tab title=Processing
 > >
 > > ```processing
 > > PImage img;
@@ -129,6 +135,9 @@ Se obtuvieron los siguientes resultados
 > > }
 > > ```
 >
+
+#### Métodos Luma
+> :Tabs
 > > :Tab title=Luma 601
 > >
 > > ![Luma601](/docs/sketches/luma601.gif)
@@ -216,6 +225,9 @@ Se obtuvieron los siguientes resultados
 > > }
 > > ```
 >
+
+#### Método HSV
+> :Tabs
 > > :Tab title=HSV
 > >
 > > ![HSV](/docs/sketches/HSV.gif)
