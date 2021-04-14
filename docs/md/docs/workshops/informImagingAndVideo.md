@@ -28,7 +28,7 @@ Aplicando un filtro de negativo a una imagen. Para este proceso, se cargaron tod
 El método del promedio aritmético RGB consiste en hallar un promedio aritmético de cada uno de los pixeles a través de la fórmula
 > :Formula align=center
 > ```
-> Gray = /frac{(R+G+B)}{3}
+> Gray = \frac{(R+G+B)}{3}
 > ```
 
 #### Método Luma
@@ -108,7 +108,7 @@ Acá el núcleo de la matriz de la imagen (original), es el píxel con valor 1 e
 > :Formula align=center
 > ```
 > (4 x 0) + (0 x 0) + (0 x 0) + (0 x 0) + (0 x 1) + (0 x 1) + (0 x 0) + (-4 x 2) = -8
-> ``
+> ```
 
 Ahora el resultado del pixel nucleo de la matriz de la imagen original es -8.
 

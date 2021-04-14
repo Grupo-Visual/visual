@@ -29,15 +29,15 @@ Kernel 3, con:
 > :Tabs
 > > :Tab title=Kernel 1
 > > 
-> > <p align="center"><img src="/docs/sketches/convo1.png"/></p>
+> > ![Convolucion1](/docs/sketches/convo1.png)
 >
 > > :Tab title=Kernel 2
 > > 
-> > <p align="center"><img src="/docs/sketches/convo2.png"/></p>
+> > ![Convolucion2](/docs/sketches/convo2.png)
 >
 > > :Tab title=Kernel 3
 > > 
-> > <p align="center"><img src="/docs/sketches/convo3.png"/></p>
+> > ![Convolucion3](/docs/sketches/convo3.png)
 >
 > > :Tab title=Processing
 > >
