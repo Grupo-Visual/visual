@@ -1,5 +1,7 @@
 # Imagen - Convolución
 
+[Volver al informe](/docs/workshops/informImagingAndVideo)
+
 ## Image Kernel 
 A continuación se presentan los resultados obtenidos con los siguientes Kernel:
 Kernel 1, con:

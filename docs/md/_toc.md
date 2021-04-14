@@ -6,6 +6,7 @@
 > >
 > > [Informe](/docs/workshops/informImagingAndVideo)
 > > > :Collapse label= Resultados
+> > >
 > > > [Imagen - Filtros](/docs/workshops/filters)
 > > > [Vídeo - Filtros](/docs/workshops/filtersVideo)
 > > > [Imagen - Convolución](/docs/workshops/convolucion)

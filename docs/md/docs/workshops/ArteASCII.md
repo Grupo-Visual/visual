@@ -1,12 +1,15 @@
 # Arte ASCII
+
+[Volver al informe](/docs/workshops/informImagingAndVideo)
+
 Se obtuvo el siguiente resultado
 
 > :Tabs
-> > :Tab title=Kernel 1
+> > :Tab title=Proceso imagen a ASCII
 > > 
 > > ![Proceso Imagen a ASCII](/docs/sketches/ResultadoArteAscii.PNG)
 >
-> > :Tab title=Kernel 2
+> > :Tab title=Imagen en ASCII
 > > 
 > > ![Imagen ASCII](/docs/sketches/ResultadoArteAscii2.PNG)
 >
