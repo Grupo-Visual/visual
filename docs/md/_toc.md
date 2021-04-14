@@ -4,6 +4,7 @@
 >
 > > :Collapse label= Imaging & Video
 > >
+> > [Informe](/docs/workshops/informImagingAndVideo)
 > > [Imagen - Filtros](/docs/workshops/filters)
 > > [Vídeo - Filtros](/docs/workshops/filtersVideo)
 > > [Imagen y vídeo - Mosaico](/docs/workshops/mosaico)
