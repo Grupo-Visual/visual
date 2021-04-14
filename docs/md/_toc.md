@@ -12,8 +12,6 @@
 > > > [Imagen - Convolución](/docs/workshops/convolucion)
 > > > [Imagen - Arte ASCII](/docs/workshops/ArteASCII)
 > > > [Imagen y vídeo - Mosaico](/docs/workshops/mosaico)
-
-
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
