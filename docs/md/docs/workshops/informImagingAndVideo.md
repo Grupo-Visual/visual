@@ -37,15 +37,22 @@ Existen variantes del método Luma, que se basan en los pesos que se le da a cad
 De arriba hacia abajo:
 > :Formula align=center
 > ```
-> \begin{eqnarray*}
-> (SDTV) Y'_{601} &=& (0.2989 \times R) + (0.5870 \times G)+ (0.1140 \times B) 
-> \\
-> (Adobe) Y'_{240} &=& (0.212 \times R) + (0.701 \times G) + (0.087 \times B)
-> \\
-> (HDTV) Y'_{709} &=& (0.2126 \times R) + (0.7152 \times G) +(0.0722 \times B) 
-> \\
-> (UHDTV, HDR) Y'_{709} &=& (0.2627 \times R) + (0.6780 \times G) + (0.0593 \times B )
-> \end{eqnarray*}
+> (SDTV) Y'_{601} = (0.2989 \times R) + (0.5870 \times G)+ (0.1140 \times B) 
+> ```
+
+> :Formula align=center
+> ```
+> (Adobe) Y'_{240} = (0.212 \times R) + (0.701 \times G) + (0.087 \times B)
+> ```
+
+> :Formula align=center
+> ```
+> (HDTV) Y'_{709} = (0.2126 \times R) + (0.7152 \times G) +(0.0722 \times B) 
+> ```
+
+> :Formula align=center
+> ```
+> (UHDTV, HDR) Y'_{709} = (0.2627 \times R) + (0.6780 \times G) + (0.0593 \times B )
 > ```
 
 Este valor Y' se usa para los valores de R, G y B en cada uno de los pixeles para cada caso.
