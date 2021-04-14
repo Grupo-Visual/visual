@@ -66,12 +66,60 @@ El método HSL consiste en hallar el promedio de el máximo y el mínimo de los 
 #### Resultados
 Los resultados pueden ser encontrados en las secciones [Imagen - Filtros](/docs/workshops/filters) y  [Vídeo - Filtros](/docs/workshops/filtersVideo) para imagen y vídeo correspondientemente.
 
-## Conclusiones y trabajo futuro
-Hay bastantes métodos para la conversión de imágenes y/o aplicación de filtros. A pesar de que varias de ellas varían de forma mínimo, como se mencionó anteriormente, cada método tiene sus ventajas en aspectos muy particulares frente a los otros. Resultaría pertinente realizar diversas pruebas con amplios bancos de imágenes que permitieran clasificar de alguna manera los diferentes métodos en términos de el uso apropiado de cada uno en función del resultado que se desea obtener.
-
 
 ## Aplicación de máscaras de convolución
+En esta sección presentamos la aplicación de la técnica de procesamiento de imágenes denominada Convolución, Kernel o Máscara para imágenes en la cual mediante una matriz de tamaño impar se logran efectos como enfoque, desenfoque o realce. Estas denominadas máscaras se logran mediante una convolución entre un núcleo (kernel) y una imagen, cambiando la intensidad de un pixel para reflejar las intensidades de los piexeles circundantes.
+
+La convolución también es útil para afinar o mejorar algunas cualidades de las imágenes, estas mejoras son muy útiles cuando se trata de imágenes científicas.
+
+
+Ejemplo:
+
+El alto y el ancho del kernel no tiene que ser el mismo, sin embargo deben ser impares. Los valores contenidos dentro del kernel son los que determinan un máscara o convolucion, determinando cómo transformar los píxeles de la imagen original en los píxeles de la imagen resultante.
+
+Kernel 3x3
+
+|  |  |  |
+| :----: | :----: | :----: |
+| -2 | -2 | 0 |
+| -2 | 6 | 0 |
+| 0 | 0 | 0 |
+
+La convolución es una operación que se realiza píxel a píxel de la imagen, podemos asemejar el kernel como una cuadrícula de número que pasa sobre cada píxel de una imagen realizando los cálculos de convolución a lo largo de todo el camino. Si pensamos en la imagen (original) como una cuadrícula de números por la que pasa nuestro kernel, podemos podemos presentar el siguiente caso:
+
+Se toma una fracción, del mismo mataño que nuestro kernel, de la gran cuadrícula de la imagen original:
+
+|  |  |  |
+| :----: | :----: | :----: |
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 0 | 1 | 2 |
+
+Con un kernel de convolución :
+
+|  |  |  |
+| :----: | :----: | :----: |
+| 4 | 0 | 0 |
+| 0 | 0 | 0 |
+| 0 | 0 | -4 |
+
+Acá el núcleo de la matriz de la imagen (original), es el píxel con valor 1 en la celda (2,2), la operación realizada:
+
+> :Formula align=center
+> ```
+> (4 x 0) + (0 x 0) + (0 x 0) + (0 x 0) + (0 x 1) + (0 x 1) + (0 x 0) + (-4 x 2) = -8
+> ``
+
+Ahora el resultado del pixel nucleo de la matriz de la imagen original es -8.
+
+#### Resultados
+Los resultados pueden ser encontrados en la sección [Imagen - Convolución](/docs/workshops/convolucion)
 
 ## Conversión de imagen a Ascii art
 
 ## Conversión a foto-mosaico
+
+## Conclusiones y trabajo futuro
+Hay bastantes métodos para la conversión de imágenes y/o aplicación de filtros. A pesar de que varias de ellas varían de forma mínimo, como se mencionó anteriormente, cada método tiene sus ventajas en aspectos muy particulares frente a los otros. Resultaría pertinente realizar diversas pruebas con amplios bancos de imágenes que permitieran clasificar de alguna manera los diferentes métodos en términos de el uso apropiado de cada uno en función del resultado que se desea obtener.
+
+

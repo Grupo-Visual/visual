@@ -7,9 +7,10 @@
 > > [Informe](/docs/workshops/informImagingAndVideo)
 > > [Imagen - Filtros](/docs/workshops/filters)
 > > [Vídeo - Filtros](/docs/workshops/filtersVideo)
+> > [Imagen - Convolución](/docs/workshops/convolucion)
 > > [Imagen y vídeo - Mosaico](/docs/workshops/mosaico)
 > > [Imagen - Arte ASCII](/docs/workshops/ArteASCII)
-> > [Imagen - Convolución](/docs/workshops/convolucion)
+
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
