@@ -185,7 +185,7 @@ Se obtuvieron los siguientes resultados
 > >
 > > ![Luma709](/docs/sketches/luma7algo.gif)
 >
-> > :Tab title=Processing Luma 601
+> > :Tab title=Processing Luma 709
 > >
 > > ```processing
 > > PImage img;

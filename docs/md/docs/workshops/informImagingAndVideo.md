@@ -170,17 +170,25 @@ Los resultados pueden ser encontrados en la sección [Imagen y vídeo - Mosaico]
 
 
 ## Conclusiones y trabajo futuro
-Hay bastantes métodos para la conversión de imágenes y/o aplicación de filtros. A pesar de que varias de ellas varían de forma mínimo, como se mencionó anteriormente, cada método tiene sus ventajas en aspectos muy particulares frente a los otros. Resultaría pertinente realizar diversas pruebas con amplios bancos de imágenes que permitieran clasificar de alguna manera los diferentes métodos en términos de el uso apropiado de cada uno en función del resultado que se desea obtener.
 
+### Particulares
 
+#### Conversión a grises y negativo
+Hay bastantes métodos para la conversión de imágenes y/o aplicación de filtros. A pesar de que varias de ellas varían de forma mínima, como se mencionó anteriormente, cada método tiene sus ventajas en aspectos muy particulares frente a los otros. Resultaría pertinente realizar diversas pruebas con amplios bancos de imágenes que permitieran clasificar de alguna manera los diferentes métodos en términos de el uso apropiado de cada uno en función del resultado que se desea obtener.
+
+#### Arte ASCII
 El Arte ASCII permite representar imágenes a través de caracteres, esto fue útil cuando las impresoras no eran muy avanzadas, además cuando el correo electrónico empezó surge como necesidad de representar una imagen.
 
-
+#### Fotomosaicos
 Los fotomosaicos son un interesante concepto de arte electrónico que ha cautivado a varias personas y que aún sigue vigente, algunos artististas se encuentran desarrollando más trabajos relacionados con diferentes técnicas.
 
 La técnica utilizada en este proyecto ha permitido obtener resultados bastante cercanos a la imagen original con los parametros usados. Sin embargo, al intentar reducir el valor de la escala de reducción de la imagen para intentar obtener una imagen menos pixelada y más cercana a la original, se produce un problema de rendimiento, los fotogramas de la captura de vídeo se reducen debido al mayor número de cálculos que debe hacer el servidor.
 
 Como trabajo futuro se propone utilizar un método más optimizado para realizar los calculos de la imagen o utilizar un dispositivo con más recursos de computo. Adicionalmente, sería interesante aumentar el banco de imágenes y por ende la escala/gama de colores.
 
+#### Máscaras de convolución
+
+### Generales
+En términos generales, resulta impresionante cómo la conversión de imágenes y vídeo, tanto en vivo como cuando se trata de archivos pregrabados, se puede hacer de manera relativamente fácil, aún cuando estos procesos parecían lejanos en el pasado. Para algunos de estos procesos, el posible trabajo futuro probablemente se vea orientado hacia la optimización de los algoritmos, ya que aunque los existentes hoy en día ofrecen resultados considerablemente buenos, en ocasiones se presentan problemas de rendimiento al hacer ciertas modificaciones en los parámetros que reciben los mismos. 
 
 
