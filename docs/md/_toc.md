@@ -3,6 +3,7 @@
 > :Collapse label=Workshops
 >
 > > :Collapse label= Imaging & Video
+> >
 > > [Imagen - Filtros](/docs/workshops/filters)
 > > [Vídeo - Filtros](/docs/workshops/filtersVideo)
 > > [Imagen y vídeo - Mosaico](/docs/workshops/mosaico)
