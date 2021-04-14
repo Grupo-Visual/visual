@@ -63,7 +63,7 @@ El método HSV consiste en tomar el máximo de los valores entre R,G y B
 #### Método HSL
 El método HSL consiste en hallar el promedio de el máximo y el mínimo de los valores entre R,G y B
 
-#### Resultados
+### Resultados
 Los resultados pueden ser encontrados en las secciones [Imagen - Filtros](/docs/workshops/filters) y  [Vídeo - Filtros](/docs/workshops/filtersVideo) para imagen y vídeo correspondientemente.
 
 
@@ -112,14 +112,28 @@ Acá el núcleo de la matriz de la imagen (original), es el píxel con valor 1 e
 
 Ahora el resultado del pixel nucleo de la matriz de la imagen original es -8.
 
-#### Resultados
+### Resultados
 Los resultados pueden ser encontrados en la sección [Imagen - Convolución](/docs/workshops/convolucion)
 
 ## Conversión de imagen a Ascii art
+
+### Propósito
+
+Arte ASCII consiste en la formación de imágenes o arte a partir de los caracteres disponibles en la tabla ASCII.
+
+### Background
+
+Existen varias formas de hacer arte con imágenes siguiendo esta idea, al igual que la tabla ASCII es útil, se puede utilizar una tabla que cumpla con la misma finalidad de codificar caracteres, por ejemplo, la tabla ANSI que es otro estándar de codificación.
+
+### Resultados
+Los resultados pueden ser encontrados en la sección [Imagen - Arte ASCII](/docs/workshops/ArteASCII)
 
 ## Conversión a foto-mosaico
 
 ## Conclusiones y trabajo futuro
 Hay bastantes métodos para la conversión de imágenes y/o aplicación de filtros. A pesar de que varias de ellas varían de forma mínimo, como se mencionó anteriormente, cada método tiene sus ventajas en aspectos muy particulares frente a los otros. Resultaría pertinente realizar diversas pruebas con amplios bancos de imágenes que permitieran clasificar de alguna manera los diferentes métodos en términos de el uso apropiado de cada uno en función del resultado que se desea obtener.
+
+
+El Arte ASCII permite representar imágenes a través de caracteres, esto fue útil cuando las impresoras no eran muy avanzadas, además cuando el correo electrónico empezó surge como necesidad de representar una imagen.
 
 

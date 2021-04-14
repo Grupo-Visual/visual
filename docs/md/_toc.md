@@ -5,11 +5,13 @@
 > > :Collapse label= Imaging & Video
 > >
 > > [Informe](/docs/workshops/informImagingAndVideo)
-> > [Imagen - Filtros](/docs/workshops/filters)
-> > [Vídeo - Filtros](/docs/workshops/filtersVideo)
-> > [Imagen - Convolución](/docs/workshops/convolucion)
-> > [Imagen y vídeo - Mosaico](/docs/workshops/mosaico)
-> > [Imagen - Arte ASCII](/docs/workshops/ArteASCII)
+> > > :Collapse label= Resultados
+> > > [Imagen - Filtros](/docs/workshops/filters)
+> > > [Vídeo - Filtros](/docs/workshops/filtersVideo)
+> > > [Imagen - Convolución](/docs/workshops/convolucion)
+> > > [Imagen - Arte ASCII](/docs/workshops/ArteASCII)
+> > > [Imagen y vídeo - Mosaico](/docs/workshops/mosaico)
+
 
 >
 > [Rendering](/docs/workshops/rendering)
