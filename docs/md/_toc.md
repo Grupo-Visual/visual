@@ -1,17 +1,22 @@
 [Home](/)
 
-> :Collapse label=Workshops
+> :Collapse label=Talleres
 >
-> > :Collapse label= Imaging & Video
+> > :Collapse label= Imágenes & Video
 > >
-> > [Informe](/docs/workshops/informImagingAndVideo)
-> > > :Collapse label= Resultados
+> > [Informe Software](/docs/workshops/informImagingAndVideo)
+> > > :Collapse label= Resultados Software
 > > >
 > > > [Imagen - Filtros](/docs/workshops/filters)
-> > > [Vídeo - Filtros](/docs/workshops/filtersVideo)
+> > > [Video - Filtros](/docs/workshops/filtersVideo)
 > > > [Imagen - Convolución](/docs/workshops/convolucion)
 > > > [Imagen - Arte ASCII](/docs/workshops/ArteASCII)
-> > > [Vídeo - Mosaico](/docs/workshops/mosaico)
+> > > [Video - Mosaico](/docs/workshops/mosaico)
+> >
+> > [Informe Hardware](/docs/workshops/informeHardware)
+> > > :Collapse label= Resultados Hardware
+> > >
+> > > [Imágenes](/docs/workshops/imaHardware)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
@@ -29,7 +34,7 @@
 > [Libs](/docs/snippets/lib)
 > [Sound](/docs/snippets/sound)
 
-> :Collapse label=People
+> :Collapse label=Equipo
 > 
 > [Alejandro Alejo](/docs/members/AlejandroAlejo)
 > [Julián Beltran](/docs/members/JulianBeltran)
