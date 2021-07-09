@@ -10,8 +10,7 @@ var siColor = false;
 var kernel = [0, 0, 0, 0, 1, 0, 0, 0, 0];
 
 function preload(){
-  sha = loadShader('/shader.vert','/frag.frag');
-  img = loadImage("/lenna.png");
+  sha = loadShader('/visual/docs/sketches/shaders/paraTodos.vert','/visual/docs/sketches/shaders/imaConv.frag');
 }
 function setup() {
   createCanvas(700, 550, WEBGL);
