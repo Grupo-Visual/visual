@@ -6,7 +6,7 @@ Convoluciones:
 > > 
 > > > :Formula align=center
 > >
-> > > :P5 sketch=/docs/sketches/VideoConvHardware.js, width=700, height=600
+> > > :P5 sketch=/docs/sketches/videoConvHardware.js, width=700, height=600
 >
 > > :Tab title=P5.js
 > >
