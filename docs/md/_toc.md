@@ -17,6 +17,7 @@
 > > > :Collapse label= Resultados Hardware
 > > >
 > > > [Imágenes](/docs/workshops/imaHardware)
+> > > [Vídeo](/docs/workshops/convoMasks)
 >
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
