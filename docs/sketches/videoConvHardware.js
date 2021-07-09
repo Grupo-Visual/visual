@@ -1,4 +1,3 @@
-let img;
 let sha;
 let identidad;
 let borde;
@@ -53,7 +52,7 @@ function setup() {
   shader(sha);
   capture = createCapture(VIDEO);
   capture.hide();
-  sha.setUniform("offSet", [1.0/img.width, 1.0/img.height]);
+  sha.setUniform("offSet", [1.0/capture.width, 1.0/capture.height]);
   sha.setUniform("img", capture);
   background(0);
   noStroke();

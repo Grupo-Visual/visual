@@ -6,13 +6,12 @@ Convoluciones:
 > > 
 > > > :Formula align=center
 > >
-> > > :P5 sketch=/docs/sketches/videoConvHardware.js, width=700, height=600
+> > > :P5 sketch=/docs/sketches/videoConvHardware.js, width=500, height=500
 >
 > > :Tab title=P5.js
 > >
 > > 
 > > > ```javascript
-> > >let img;
 > > >let sha;
 > > >let identidad;
 > > >let borde;
@@ -66,7 +65,7 @@ Convoluciones:
 > > >   shader(sha);
 > > >   capture = createCapture(VIDEO);
 > > >   capture.hide();
-> > >   sha.setUniform("offSet", [1.0/img.width, 1.0/img.height]);
+> > >   sha.setUniform("offSet", [1.0/capture.width, 1.0/capture.height]);
 > > >   sha.setUniform("img", capture);
 > > >   background(0);
 > > >   noStroke();
