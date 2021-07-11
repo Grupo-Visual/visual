@@ -11,6 +11,7 @@
 > > > [Video - Filtros](/docs/workshops/filtersVideo)
 > > > [Imagen - Convolución](/docs/workshops/convolucion)
 > > > [Imagen - Arte ASCII](/docs/workshops/ArteASCII)
+> > > [Foto - Mosaico](/docs/workshops/FotoMosaico)
 > > > [Video - Mosaico](/docs/workshops/mosaico)
 > >
 > > [Informe Hardware](/docs/workshops/informeHardware)
