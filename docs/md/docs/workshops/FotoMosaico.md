@@ -4,6 +4,7 @@
 
 Se obtuvo el siguiente resultado
 
+> > ![Foto mosaico](/docs/sketches/images/mosaico/gato.png)
 > 
 > >
 > > 
