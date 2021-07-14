@@ -1,5 +1,105 @@
-# Aplicación de máscaras de convolución con Shaders
-Convoluciones:
+# Video con shaders
+
+- Promedio aritmético RGB
+- Negativo
+- Luma
+
+> :Tabs
+> > :Tab title=Resultado
+> > 
+> > > :Formula align=center
+> >
+> > > :P5 sketch=/docs/sketches/videoProNegLumaHardware.js, width=700, height=550
+>
+> > :Tab title=P5.js
+> >
+> > 
+> > > ```javascript
+> > >let theShader;
+> > >let img;
+> > >let sel;
+> > >var opcion = 1;
+> > >
+> > >function preload(){
+> > >  theShader = loadShader('/visual/docs/sketches/shaders/paraTodos.vert','/visual/docs/sketches/shaders/imaProNegLuma.frag');
+> > >}
+> > >function setup() {
+> > >  createCanvas(700, 550, WEBGL);
+> > >  sel = createSelect();
+> > >  sel.position(620, 20);
+> > >  sel.option('Promedio');
+> > >  sel.option('Negativo');
+> > >  sel.option('Luma');
+> > >  sel.changed(function () {
+> > >    let val = sel.value();
+> > >    if(val == 'Promedio'){
+> > >      opcion = 1;
+> > >    } else if(val == 'Negativo'){
+> > >      opcion = 2;
+> > >    } else if(val == 'Luma'){
+> > >      opcion = 3; 
+> > >    }
+> > >  });
+> > >  textureMode(NORMAL);
+> > >  shader(theShader);
+> > >  capture = createCapture(VIDEO);
+> > >  capture.hide();
+> > >  theShader.setUniform("img", capture);
+> > >  background(0);
+> > >  noStroke();
+> > >}
+> > >function draw() {
+> > >  theShader.setUniform("opcion", opcion);
+> > >  beginShape();
+> > >  vertex(-width/2, -height/2, 0, 0);
+> > >  vertex(width/2, -height/2, 1, 0); 
+> > >  vertex(width/2, height/2, 1, 1); 
+> > >  vertex(-width/2, height/2, 0, 1); 
+> > >  endShape(CLOSE);
+> > >}
+> > > ```
+>
+> > :Tab title=.frag
+> >
+> >
+> > > ```c
+> > >precision mediump float;
+> > >uniform sampler2D img;
+> > >uniform int opcion;
+> > >
+> > >varying vec4 vVertexColor;
+> > >vec4 textureColor;
+> > >float pro;
+> > >float luma;
+> > >
+> > >varying vec2 vTexCoord;
+> > >void main() {
+> > >  textureColor = texture2D(img, vTexCoord);
+> > >  if(opcion == 2){
+> > >    textureColor.r = 1.0-textureColor.r;
+> > >    textureColor.g = 1.0-textureColor.g;
+> > >    textureColor.b = 1.0-textureColor.b;
+> > >    textureColor.a = 1.0;
+> > >  }else if (opcion == 1){
+> > >    pro = (textureColor.r + textureColor.g + textureColor.b)/3.0;
+> > >    textureColor.r = pro;
+> > >    textureColor.g = pro;
+> > >    textureColor.b = pro;
+> > >    textureColor.a = 1.0;
+> > >  }else{
+> > >    luma = textureColor.r*0.2989 + textureColor.g*0.5870 + textureColor.b*0.1140;
+> > >    textureColor.r = luma;
+> > >    textureColor.g = luma;
+> > >    textureColor.b = luma;
+> > >    textureColor.a = 1.0;
+> > >  }
+> > >  gl_FragColor = textureColor * vVertexColor;  
+> > >}
+> > > ```
+
+
+
+- Convoluciones
 
 > :Tabs
 > > :Tab title=Resultado

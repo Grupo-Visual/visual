@@ -96,7 +96,7 @@
 > > >}
 > > > ```
 
-Convoluciones:
+- Convoluciones
 
 > :Tabs
 > > :Tab title=Resultado
