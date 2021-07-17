@@ -1,4 +1,4 @@
-# Taller 1 - Imaging & Video
+# Taller 1 - Imaging & Video processing (Software)
 Para el primer taller, se llevaron a cabo las siguientes tareas:
 * (Imágenes/video) Conversión a negativo y escala de grises
 * (Imágenes) Aplicación de algunas máscaras de convolución
