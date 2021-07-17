@@ -39,4 +39,5 @@ function draw() {
   vertex(width/2, height/2, 1, 1); 
   vertex(-width/2, height/2, 0, 1); 
   endShape(CLOSE);
+  console.log(frameRate());
 }
