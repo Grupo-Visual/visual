@@ -194,5 +194,6 @@ function draw() {
             image(imagen, x * vScale, y * vScale, vScale, vScale);
         }
     }
+    console.log(frameRate())
 
 }

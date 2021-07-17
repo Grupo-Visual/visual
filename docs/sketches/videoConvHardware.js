@@ -69,4 +69,5 @@ function draw() {
   vertex(-width/2, height/2, 0, 1); 
   sha.setUniform("kernel", kernel);
   endShape(CLOSE);
+  console.log(frameRate());
 }

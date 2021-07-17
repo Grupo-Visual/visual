@@ -29,4 +29,5 @@ function draw() {
     }
   }
   updatePixels();
+  console.log(frameRate());
 }
