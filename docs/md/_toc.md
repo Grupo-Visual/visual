@@ -21,7 +21,10 @@
 > > > [Imágenes](/docs/workshops/imaHardware)
 > > > [Vídeo](/docs/workshops/convoMasks)
 >
-> [Rendering](/docs/workshops/rendering)
+> > :Collapse label= Rendering
+> >
+> > [Investigación](/docs/workshops/rendering)
+> > [Implementación](/docs/workshops/ZBufferingImp)
 > [Algovis](/docs/workshops/algovis)
 > [Computer Graphics](/docs/workshops/cg)
 > [HCI](/docs/workshops/hci)
