@@ -11,13 +11,17 @@ La implementación permite también, graficar una cuarta esfera naranja, la cual
 
 > :Tabs
 > > :Tab title=Esfera con profundidad variable
+> >
 > > ![Orange](/docs/sketches/Orange.gif)
+>
 
 Finalmente, si mantenemos presionado el botón izquierdo del mouse, se nos mostrará en pantalla la profundidad correspondiente a la coordenada en la que se encuentra el cursor.
 
 > :Tabs
 > > :Tab title=Indicador de Profundidad del pixel
+> >
 > > ![DepthCoord](/docs/sketches/DepthCoord.gif)
+>
 
 ### Código en Processing:
 ```processing
