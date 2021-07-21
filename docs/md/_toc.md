@@ -23,7 +23,7 @@
 >
 > > :Collapse label= Rendering
 > >
-> > [Investigación](/docs/workshops/rendering)
+> > [Z-buffering](/docs/workshops/rendering)
 > > [Implementación](/docs/workshops/ZBufferingImp)
 >
 >
