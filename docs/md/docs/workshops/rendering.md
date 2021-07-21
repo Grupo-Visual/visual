@@ -65,7 +65,7 @@ Y de estas dos, concluimos:
 
 > :Formula align=center
 > ```
-> AX + BY + CZ + D = 0
+> AX + BY + CZ + D = 0 \\
 > Z^{'} = Z - \frac{A}{C}
 > ```
 
