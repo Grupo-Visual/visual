@@ -31,13 +31,42 @@ Para realizar este proceso se podría ordenar los triángulos en orden de profun
 
 El algoritmo de Depth-Buffer o Z-Buffer no es más que una matriz bidimensional que tiene la misma dimensión que el buffer de fotogramas y que se utiliza para almacenar los objetos a medida que se rasterizan los triángulos. Cuando se crea esta matriz se inicializa cada píxel de la matriz con un número muy grande. En el caso en el que se encuentre un pixel que se superpone al triángulo actual:
 
-1) Se calcula la coordenada x o la profundidad del punto en el triángulo que se superpone.
+1. Se calcula la coordenada x o la profundidad del punto en el triángulo que se superpone.
 
-2) Se compara la profundidad del triángulo actual con el valor almacenado en búfer de profundidad para ese pixel.
+2. Se compara la profundidad del triángulo actual con el valor almacenado en búfer de profundidad para ese pixel.
 
-3) Si encontramos que el valor almacenado en el búfer de profundidad es mayor que la profundidad del punto en el triángulo, entonces el  nuevo punto está más cerca de la cámara y el punto almacenado en búfer de profundidad está más cerca del observador o de la cámara y el valor almacenado se reemplaza por el nuevo y más cercano.
+3. Si encontramos que el valor almacenado en el búfer de profundidad es mayor que la profundidad del punto en el triángulo, entonces el  nuevo punto está más cerca de la cámara y el punto almacenado en búfer de profundidad está más cerca del observador o de la cámara y el valor almacenado se reemplaza por el nuevo y más cercano.
 
 De esta forma el algoritmo Z-Buffer encuentra una forma más óptima de realizar el proceso para toda la matriz de píxeles que componen la imagen proyectada del triángulo de 3D a 2D en la pantalla.
+
+Siendo así, el cálculo de la profundidad se lleva a cabo de la siguiente manera:
+
+Se sabe que la fórmula del plano es:
+> :Formula align=center
+> ```
+> ax + by + cz + d = 0
+> ```
+
+Lo cual implica 
+> :Formula align=center
+> ```
+> z = - (ax + by + cz + d)/c , c \neq 0
+> ```
+
+Si denotamos la profundidad en el punto A como Z, y la profunidad en el punto B como Z'
+> :Formula align=center
+> ```
+> AX + BY + CZ + D = 0
+> Z = - \frac{(AX + BY + CZ + D)}{C} 
+> Z^{'} = \frac{(-A(X + 1) - BY -D)}{C}
+> ```
+
+Y de estas dos, concluimos:
+
+> AX + BY + CZ + D = 0
+> Z^{'} = Z - \frac{A}{C}
+> ```
+
 
 ## Usos
 
