@@ -63,6 +63,8 @@ Si denotamos la profundidad en el punto A como Z, y la profunidad en el punto B 
 
 Y de estas dos, concluimos:
 
+> :Formula align=center
+> ```
 > AX + BY + CZ + D = 0
 > Z^{'} = Z - \frac{A}{C}
 > ```
