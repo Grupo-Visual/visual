@@ -56,7 +56,7 @@ Lo cual implica
 Si denotamos la profundidad en el punto A como Z, y la profunidad en el punto B como Z'
 > :Formula align=center
 > ```
-> AX + BY + CZ + D = 0
+> AX + BY + CZ + D = 0  \\
 > Z = - \frac{(AX + BY + CZ + D)}{C} \\
 > Z^{'} = \frac{(-A(X + 1) - BY -D)}{C}
 > ```
