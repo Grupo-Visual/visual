@@ -18,6 +18,7 @@
 > > [Informe Hardware](/docs/workshops/informeHardware)
 > > > :Collapse label= Resultados Hardware
 > > >
+> > > [Foto - Mosaico](/docs/workshops/FotoMosaicoH)
 > > > [Imágenes](/docs/workshops/imaHardware)
 > > > [Vídeo](/docs/workshops/convoMasks)
 >
