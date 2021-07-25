@@ -2,7 +2,7 @@ var quadrille;
 var image;
 
 function preload() {
-  image = loadImage('/docs/sketches/images/mosaico/gato.png');
+  image = loadImage('/sketches/images/mosaico/gato_mosaico.jpg');
 }
 
 function setup() {
