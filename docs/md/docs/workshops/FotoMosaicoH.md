@@ -2,8 +2,7 @@
 
 [Volver al informe](/docs/workshops/informeHardware)
 
-Se obtuvo el siguiente resultado
-> > > :P5 lib1=https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js@0.1.2/p5.quadrille.min.js, sketch=/image.js, width=800, height=360
+> > > :P5 lib1=https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js@0.1.2/p5.quadrille.min.js, sketch=docs/workshops/image.js, width=800, height=360
 >
 > >
 > > 
