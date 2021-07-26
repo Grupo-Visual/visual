@@ -2,8 +2,8 @@
 Para el segundo taller, de forma análoga, se llevaron a cabo las siguientes tareas. Esta vez, utilizando implementaciones por Hardware (shaders)
 * (Imágenes/video) [Conversión a negativo y escala de grises](/docs/workshops/imaHardware)
 * (Imágenes/vídeo) [Aplicación de algunas máscaras de convolución](/docs/workshops/convoMasks)
-* (Imágenes) Conversión de la imagen a ascii art
-* (Imágenes) Conversión a foto-mosaico
+* (Imágenes) [Conversión de la imagen a ascii art ](/docs/workshops/imaHardware)
+* (Imágenes) [Conversión a foto-mosaico](/docs/workshops/FotoMosaicoH)
 
 ## Propósito
 Uno de los principales objetivos de realizar la implementación por Hardware, además de los motivos académicos relacionados con el trabajo alrededor del concepto de Shaders, es realizar una comparación del rendimiento de los mismos procedimientos al ser implementados por Software y Hardware. Dicha comparación se hace visible, en especial, en el caso de las implementaciones relacionadas con el vídeo.

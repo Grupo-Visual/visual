@@ -1,5 +1,7 @@
 # Imágenes con shaders
 
+[Volver al informe](/docs/workshops/informeHardware)
+
 - Promedio aritmético RGB
 - Negativo
 - Luma
@@ -186,20 +188,20 @@
 > >
 > >
 > > > ```c
-> > >precision mediump float;
-> > >
-> > >uniform sampler2D img;
-> > >uniform vec2 offSet;
-> > >uniform float kernel[9];
-> > >
-> > >varying vec4 vVertexColor;
-> > >varying vec2 vTexCoord;
-> > >void main() {
-> > >  
+> > > precision mediump float;
+> > > 
+> > > uniform sampler2D img;
+> > > uniform vec2 offSet;
+> > > uniform float kernel[9];
+> > > 
+> > > varying vec4 vVertexColor;
+> > > varying vec2 vTexCoord;
+> > > void main() {
+> > > 
 > > > vec2 tc[9];
 > > > 
 > > > vec4 convolution = vec4(0.0,0.0,0.0,1.0);
-> > >
+> > > 
 > > > tc[0] = vec2(-offSet.s, +offSet.t);
 > > > tc[1] = vec2(0.0,       +offSet.t);
 > > > tc[2] = vec2(+offSet.s, +offSet.t);
@@ -210,10 +212,186 @@
 > > > tc[7] = vec2(0.0,       -offSet.t);
 > > > tc[8] = vec2(+offSet.t, -offSet.t);
 > > > for(int i = 0; i < 9; i++){
-> > >   convolution += texture2D(img, vTexCoord + tc[i]) * kernel[i];
+> > > convolution += texture2D(img, vTexCoord + tc[i]) * kernel[i];
 > > > }
 > > > gl_FragColor = convolution * vVertexColor;  
-> > >}
+> > > }
 > > > ```
+
+
+
+- Arte ASCII
+
+> :Tabs
+> > :Tab title = Original
+> >
+> > > :Formula align=center
+> >
+> > > ![imagen204](/docs/sketches/images/mosaico/gato_mosaico.jpg)
+>
+> > :Tab title=Resultado
+> >
+> > > :Formula align=center
+> >
+> > > :P5 lib1=/docs/sketches/quadrille.min.js, sketch=/docs/sketches/imageAsciiHard.js, width=600, height=651
+>
+> > :Tab title=AsciiArtHardware.js
+> >
+> >  
+> > >```js
+> > >let mosaic;
+> > >let image;
+> > >let symbol1;
+> > >let debug;
+> >>function preload() {
+> >>image = loadImage('mandril.jpg');
+> >    >symbol1 = loadImage('simbolo.png');
+> >   > symbol2 = loadImage('2.png');
+> >    >symbol3 = loadImage('3.png');
+> >    > symbol4 = loadImage('4.png');
+> >    >symbol5 = loadImage('5.png');
+> >    > symbol6 = loadImage('6.png');
+> >    > symbol7 = loadImage('7.png');
+> >    > symbol8 = loadImage('8.png');
+> >    >symbol9 = loadImage('9.png');
+> >    >  symbol10 = loadImage('10.png');
+> >    >symbol11 = loadImage('11.png');
+> >    >symbol12 = loadImage('12.png');
+> >    > symbol13 = loadImage('13.png');
+> >    > symbol14 = loadImage('14.png');
+> >    > symbol15 = loadImage('15.png');
+> >    > symbol16 = loadImage('16.png');
+> >    > symbol17 = loadImage('17.png');
+> >    > symbol18 = loadImage('18.png');
+> >    > symbol19 = loadImage('19.png');
+> >    > symbol20 = loadImage('20.png');
+> >    > mosaic = loadShader('shader.vert', 'photomosaic.frag');
+> >    >}
+> >  >//Función para mapear un color de 0-255 entre 0-4 
+> >  >function mapColor(color) {
+> > >if (color <= 50) {
+> > >    return 0;
+> >    > } else if (color <= 102) {
+> >    >     return 1;
+> >    > } else if (color <= 153) {
+> >    >     return 2;
+> >    > } else if (color <= 204) {
+> >    >     return 3;
+> >    > } else if (color <= 255) {
+> >    >     return 4;
+> >    > }
+> >    >}
+> >    >
+> >  >function colorin(simbolos) {
+> >  >numero = Math.floor(Math.random() * (3 - 1) + 1);
+> > >console.log(numero);
+> >    > simbolos.forEach((posible) => {
+> >    >     console.log(posible.indice);
+> >    >     if (posible.indice == numero) {
+> >    >         console.log(posible.simbolo);
+> >    >         si = posible.simbolo;
+> >    >     }
+> >    > });
+> >    > return si;
+> >    >}
+> >    >
+> >  >function setup() {
+> >  >simbolos = [{ indice: "1", simbolo: symbol1 }, { indice: "2", simbolo: symbol2 }]
+> > >createCanvas(600, 600, WEBGL);
+> > > textureMode(NORMAL);
+> >    > noStroke();
+> >    > shader(mosaic);
+> >    > mosaic.setUniform('image', image);
+> >    > mosaic.setUniform('symbol1', symbol1);
+> >    > mosaic.setUniform('symbol2', symbol2);
+> >    > mosaic.setUniform('resolution', 45);
+> >    > debug = false;
+> >    > mosaic.setUniform('debug', debug);
+> >    >}
+> >    >
+> >    >function draw() {
+> >  >background(33);
+> >  >cover(true);
+> > >}
+> > >
+> >    >function cover(texture = false) {
+> >    >beginShape();
+> >  >if (texture) {
+> >  >     vertex(-width / 2, -height / 2, 0, 0, 0);
+> > >     vertex(width / 2, -height / 2, 0, 1, 0);
+> > >     vertex(width / 2, height / 2, 0, 1, 1);
+> >    >     vertex(-width / 2, height / 2, 0, 0, 1);
+> >    > } else {
+> >    >     vertex(-width / 2, -height / 2, 0);
+> >    >     vertex(width / 2, -height / 2, 0);
+> >    >     vertex(width / 2, height / 2, 0);
+> >    >     vertex(-width / 2, height / 2, 0);
+> >    > }
+> >    > endShape(CLOSE);
+> >    >}
+> >    >function keyPressed() {
+> >    >if (key === 'd') {
+> >    >     debug = !debug;
+> >    >       mosaic.setUniform('debug', debug);
+> >  > }
+> >  >}
+> > 
+> >    
+> 
+> > :Tab title=.frag
+> >
+> >
+> > > ```c
+>> > 
+> > > precision mediump float;
+> > > uniform sampler2D image;
+> > > uniform sampler2D symbol1;
+> > > uniform sampler2D symbol2;
+> >> uniform bool debug;
+> >> uniform float resolution;
+> > > varying vec4 vVertexColor ;
+> >> varying vec2 vTexCoord;
+> > > void main(){
+> >> vec2 symbolCoord = vTexCoord * resolution;
+> >> vec2 imageCoord = floor(symbolCoord);
+> > > symbolCoord = symbolCoord - imageCoord;
+> >> imageCoord =  imageCoord * vec2(1.0)/ vec2(resolution);
+> > > vec4 index = texture2D(image, imageCoord);
+> >> gl_FragColor = debug ? index : texture2D(symbol1, symbolCoord) * vVertexColor;
+> > > }
+> >
+> > 
+> 
+> > :Tab title = Alfabeto
+> >
+> > > :Formula align=center
+> >
+> > > ![imagen2](/docs/sketches/images/Ascii/simbolo.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/2.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/3.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/4.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/5.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/6.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/7.png)
+> > >  ![imagen1](/docs/sketches/images/Ascii/8.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/10.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/11.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/12.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/13.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/14.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/15.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/16.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/17.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/18.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/19.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/20.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/21.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/22.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/23.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/24.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/25.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/26.png)
+> > > ![imagen1](/docs/sketches/images/Ascii/27.png)
+
 
 > :ToCPrevNext
