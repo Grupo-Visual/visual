@@ -5,11 +5,13 @@ Para el segundo taller, de forma análoga, se llevaron a cabo las siguientes tar
 * (Imágenes) Conversión de la imagen a ascii art
 * (Imágenes) Conversión a foto-mosaico
 
-## Shaders
-Como se mencionó, todas las implementaciones fueron realizadas mediante el uso de shaders, estos se definen en este apartado ya que aplican a todas las implementaciones realizadas:
-
 ## Propósito
 Uno de los principales objetivos de realizar la implementación por Hardware, además de los motivos académicos relacionados con el trabajo alrededor del concepto de Shaders, es realizar una comparación del rendimiento de los mismos procedimientos al ser implementados por Software y Hardware. Dicha comparación se hace visible, en especial, en el caso de las implementaciones relacionadas con el vídeo.
+
+## Shaders
+Los shaders también son un conjunto de instrucciones, pero las instrucciones se ejecutan todas a la vez para cada píxel de la pantalla. Eso significa que el código que escribas tiene que comportarse de forma diferente según la posición del píxel en la pantalla. Como una prensa de tipo, su programa funcionará como una función que recibe una posición y devuelve un color, y cuando se compila se ejecuta extraordinariamente rápido.
+
+Como se mencionó, todas las implementaciones fueron realizadas mediante el uso de shaders, estos se definen en este apartado ya que aplican a todas las implementaciones realizadas:
 
 ## Vídeo - Comparación
 En pocas palabras, la implementación con shaders (o por hardware) mejora el rendimiento ya que esta permite el uso de la GPU además de la CPU. Mientras que la implementación con software depende únicamente de la CPU para su funcionamiento.
