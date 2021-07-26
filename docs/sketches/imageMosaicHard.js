@@ -164,10 +164,12 @@ function draw() {
     for (j = 0; j < quadrille.height; j++){
       color = quadrille.read(i,j);
 
+      //Cada valor RGB se mapea de 0-255 a uno de 0-4
       r = mapColor(color[0]);
       g = mapColor(color[1]);
       b = mapColor(color[2]);
 
+      //De acuerdo con el valor
       var indice = r.toString() + g.toString() + b.toString();
       var imagen;
       arregloImagenes.forEach((posibleImagen) => {
@@ -175,7 +177,6 @@ function draw() {
           imagen = posibleImagen.imagen;
         }
       });
-
       quadrille.fill(i, j, imagen)
     }
   }
