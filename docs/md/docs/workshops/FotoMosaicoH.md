@@ -3,8 +3,7 @@
 [Volver al informe](/docs/workshops/informeHardware)
 > > ![Foto mosaico](/docs/sketches/images/mosaico/gato_mosaico.jpg)
 > >
-> > > :P5 lib1=https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js@0.1.2/p5.quadrille.min.js, sketch=docs/sketches/image.js, width=650, height=340
->
+> > > :P5 lib1=/docs/sketches/quadrille.min.js, sketch=/docs/sketches/image.js, width=650, height=341
 > >
 > > 
 > > ```js
