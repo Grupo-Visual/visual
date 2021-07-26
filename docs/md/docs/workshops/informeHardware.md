@@ -27,3 +27,14 @@ De manera análoga, en la página de la implementación por hardware [Vídeo - H
 Como se puede apreciar, a pesar de que ambas implementaciones están diseñadas para correar a 60 FPS, la implementación por Software tiene problemas para alcanzar dicho valor, y oscila entre los 20 y 50 FPS aproximadamente la mayoría del tiempo. En cambio, en la imagen de la implementación por Hardware, se puede apreciar cómo todos los valores se encuentran muy cerca a los 60 FPS deseados.
 
 Los resultados de estas cantidades pueden variar dependiendo la arquitectura de la máquina en que se visualice la página, ya que estos dependen de la disponibilida de CPU y GPU de la misma.
+
+## [Fotomosaico](/visual/docs/workshops/FotoMosaicoH)
+ 
+El fotomosaico es un montaje en el que se redimensiona una imagen de su tamaño original a una menor resolución deseada con el fin de buscar una pixelación en cuadros de la imagen, para este trabajo realizamos este proceso con la librería quadrille. Se cargan cerca de 132 imágenes diferentes que se reasignan a cada uno de los nuevos píxeles de mayor tamaño de la imagen original
+ 
+La técnica utilizada en este proyecto ha permitido obtener resultados bastante cercanos a la imagen original con los parámetros usados. Sin embargo, al intentar reducir el valor de la escala de reducción de la imagen para intentar obtener una imagen menos pixelada y más cercana a la original, se produce un problema de rendimiento, los fotogramas de la captura de vídeo se reducen debido al mayor número de cálculos que debe hacer el servidor.
+ 
+Como trabajo futuro se propone utilizar un método más optimizado para realizar los cálculos de la imagen o utilizar un dispositivo con más recursos de cómputo. Adicionalmente, sería interesante aumentar el banco de imágenes y por ende la escala/gama de colores.
+
+<img src="/docs/sketches/images/mosaico/gato_mosaico.jpg" width="250" />
+<img src="/docs/sketches/images/mosaico/mosaico_cat.png" width="250" />
