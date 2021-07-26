@@ -233,135 +233,161 @@
 > >
 > > > :Formula align=center
 > >
-> > > :P5 lib1=/docs/sketches/quadrille.min.js, sketch=/docs/sketches/imageAsciiHard.js, width=600, height=651
+> > > :P5 sketch=/docs/sketches/ascii.js, width=600, height=651
 >
 > > :Tab title=AsciiArtHardware.js
 > >
 > >  
 > > >```js
-> > >let mosaic;
+> > >let ashader;
 > > >let image;
-> > >let symbol1;
-> > >let debug;
-> >>function preload() {
-> >>image = loadImage('mandril.jpg');
-> >    >symbol1 = loadImage('simbolo.png');
-> >   > symbol2 = loadImage('2.png');
-> >    >symbol3 = loadImage('3.png');
-> >    > symbol4 = loadImage('4.png');
-> >    >symbol5 = loadImage('5.png');
-> >    > symbol6 = loadImage('6.png');
-> >    > symbol7 = loadImage('7.png');
-> >    > symbol8 = loadImage('8.png');
-> >    >symbol9 = loadImage('9.png');
-> >    >  symbol10 = loadImage('10.png');
-> >    >symbol11 = loadImage('11.png');
-> >    >symbol12 = loadImage('12.png');
-> >    > symbol13 = loadImage('13.png');
-> >    > symbol14 = loadImage('14.png');
-> >    > symbol15 = loadImage('15.png');
-> >    > symbol16 = loadImage('16.png');
-> >    > symbol17 = loadImage('17.png');
-> >    > symbol18 = loadImage('18.png');
-> >    > symbol19 = loadImage('19.png');
-> >    > symbol20 = loadImage('20.png');
-> >    > mosaic = loadShader('shader.vert', 'photomosaic.frag');
-> >    >}
-> >  >//Función para mapear un color de 0-255 entre 0-4 
-> >  >function mapColor(color) {
-> > >if (color <= 50) {
-> > >    return 0;
-> >    > } else if (color <= 102) {
-> >    >     return 1;
-> >    > } else if (color <= 153) {
-> >    >     return 2;
-> >    > } else if (color <= 204) {
-> >    >     return 3;
-> >    > } else if (color <= 255) {
-> >    >     return 4;
-> >    > }
-> >    >}
-> >    >
-> >  >function colorin(simbolos) {
-> >  >numero = Math.floor(Math.random() * (3 - 1) + 1);
-> > >console.log(numero);
-> >    > simbolos.forEach((posible) => {
-> >    >     console.log(posible.indice);
-> >    >     if (posible.indice == numero) {
-> >    >         console.log(posible.simbolo);
-> >    >         si = posible.simbolo;
-> >    >     }
-> >    > });
-> >    > return si;
-> >    >}
-> >    >
-> >  >function setup() {
-> >  >simbolos = [{ indice: "1", simbolo: symbol1 }, { indice: "2", simbolo: symbol2 }]
-> > >createCanvas(600, 600, WEBGL);
-> > > textureMode(NORMAL);
-> >    > noStroke();
-> >    > shader(mosaic);
-> >    > mosaic.setUniform('image', image);
-> >    > mosaic.setUniform('symbol1', symbol1);
-> >    > mosaic.setUniform('symbol2', symbol2);
-> >    > mosaic.setUniform('resolution', 45);
-> >    > debug = false;
-> >    > mosaic.setUniform('debug', debug);
-> >    >}
-> >    >
-> >    >function draw() {
-> >  >background(33);
-> >  >cover(true);
-> > >}
+> > >let symbol = [];
 > > >
-> >    >function cover(texture = false) {
-> >    >beginShape();
-> >  >if (texture) {
-> >  >     vertex(-width / 2, -height / 2, 0, 0, 0);
-> > >     vertex(width / 2, -height / 2, 0, 1, 0);
-> > >     vertex(width / 2, height / 2, 0, 1, 1);
-> >    >     vertex(-width / 2, height / 2, 0, 0, 1);
-> >    > } else {
-> >    >     vertex(-width / 2, -height / 2, 0);
-> >    >     vertex(width / 2, -height / 2, 0);
-> >    >     vertex(width / 2, height / 2, 0);
-> >    >     vertex(-width / 2, height / 2, 0);
-> >    > }
-> >    > endShape(CLOSE);
+> >>let symbols = [
+> >>    "/visual/docs/sketches/images/ascii/1.png",
+> >    >    "/visual/docs/sketches/images/ascii/1.png",
+> >   >     "/visual/docs/sketches/images/ascii/2.png",
+> >    >    "/visual/docs/sketches/images/ascii/3.png",
+> >    >     "/visual/docs/sketches/images/ascii/4.png",
+> >    >    "/visual/docs/sketches/images/ascii/5.png",
+> >    >     "/visual/docs/sketches/images/ascii/6.png",
+> >    >     "/visual/docs/sketches/images/ascii/7.png",
+> >    >     "/visual/docs/sketches/images/ascii/8.png",
+> >    >    "/visual/docs/sketches/images/ascii/9.png",
+> >    >      "/visual/docs/sketches/images/ascii/10.png",
+> >    >    "/visual/docs/sketches/images/ascii/11.png",
+> >    >    "/visual/docs/sketches/images/ascii/12.png",
+> >    >     "/visual/docs/sketches/images/ascii/13.png",
+> >    >     "/visual/docs/sketches/images/ascii/14.png",
+> >    >     "/visual/docs/sketches/images/ascii/15.png",
+> >    >     "/visual/docs/sketches/images/ascii/16.png",
+> >    >     "/visual/docs/sketches/images/ascii/17.png",
+> >    >     "/visual/docs/sketches/images/ascii/18.png",
+> >    >     "/visual/docs/sketches/images/ascii/19.png",
+> >    >     "/visual/docs/sketches/images/ascii/20.png",
+> >    >     "/visual/docs/sketches/images/ascii/21.png",
+> >    >    "/visual/docs/sketches/images/ascii/22.png",
+> >  >    "/visual/docs/sketches/images/ascii/23.png",
+> >  >    "/visual/docs/sketches/images/ascii/24.png",
+> > >    "/visual/docs/sketches/images/ascii/25.png",
+> > >        "/visual/docs/sketches/images/ascii/26.png",
+> >    >     "/visual/docs/sketches/images/ascii/27.png"
+> >    >     ]
+> >    > 
+> >    >     function preload() {
+> >    >     image = loadImage('/visual/docs/sketches/images/ascii/gato_mosaico.jpg');
+> >    >         for (let i = 1; i < 28; i++) {
+> >    >         symbol[i] = loadImage(symbols[i]);
+> >    >         }
+> >    >     ashader = loadShader('/visual/docs/sketches/shaders/paraTodos.vert', '/visual/docs/sketches/shaders/photomosaic.frag');
 > >    >}
-> >    >function keyPressed() {
-> >    >if (key === 'd') {
-> >    >     debug = !debug;
-> >    >       mosaic.setUniform('debug', debug);
-> >  > }
-> >  >}
+> >    >
+> >  >
+> >  >function setup() {
+> > >    createCanvas(600, 600, WEBGL);
+> >    >     textureMode(NORMAL);
+> >    >         noStroke();
+> >    >         shader(ashader);
+> >    >         ashader.setUniform('image', image);
+> >    >         for (let i = 1; i < Object.keys(symbol).length; i++) {
+> >    >             ashader.setUniform('symbol' + i, symbol[i]);
+> >    >     }
+> >    >     ashader.setUniform('resolution', 400);
+> >    >    console.log("Hola");
+> >    >}
+> >  >
+> >  >
+> > >function draw() {
+> > >     background(33);
+> >    >     beginShape();
+> >    >     vertex(-width / 2, -height / 2, 0, 0, 0);
+> >    >     vertex(width / 2, -height / 2, 0, 1, 0);
+> >    >     vertex(width / 2, height / 2, 0, 1, 1);
+> >    >     vertex(-width / 2, height / 2, 0, 0, 1);
+> >    >     endShape();
+> >    > }
 > > 
-> >    
-> 
+> > 
+>
 > > :Tab title=.frag
 > >
 > >
 > > > ```c
->> > 
 > > > precision mediump float;
+> > > 
 > > > uniform sampler2D image;
-> > > uniform sampler2D symbol1;
-> > > uniform sampler2D symbol2;
-> >> uniform bool debug;
-> >> uniform float resolution;
+> > > uniform sampler2D symbol1, symbol2, symbol3, symbol4, symbol5, symbol6, symbol7, symbol8, symbol9, symbol10, symbol12, symbol11, symbol13, symbol14, symbol15, symbol16, symbol17, symbol18, symbol19, symbol20, symbol21, symbol22, symbol23, symbol24, symbol25, symbol26, symbol27;
+> > > 
+> > > uniform float resolution;
+> > > 
+> > > 
 > > > varying vec4 vVertexColor ;
-> >> varying vec2 vTexCoord;
+> > > 
+> > > varying vec2 vTexCoord;
+> > > 
 > > > void main(){
-> >> vec2 symbolCoord = vTexCoord * resolution;
-> >> vec2 imageCoord = floor(symbolCoord);
+> > > 
+> > > vec2 symbolCoord = vTexCoord * resolution;
+> > > vec2 imageCoord = floor(symbolCoord);
+> > > 
 > > > symbolCoord = symbolCoord - imageCoord;
-> >> imageCoord =  imageCoord * vec2(1.0)/ vec2(resolution);
-> > > vec4 index = texture2D(image, imageCoord);
-> >> gl_FragColor = debug ? index : texture2D(symbol1, symbolCoord) * vVertexColor;
+> > > 
+> > > imageCoord =  imageCoord * vec2(1.0)/ vec2(resolution);
+> > > 
+> > > vec4 color = texture2D(image, imageCoord) * vVertexColor;
+> > > float grayColor = (color.r*0.2126 + color.g*0.7152 + color.b*0.0722);
+> > > 
+> > > 
+> > > 
+> > >   if(grayColor < 0.05){
+> > >     color = texture2D(symbol1, symbolCoord);
+> > >   }else if(0.05 < grayColor && grayColor < 0.1){
+> > >     color = texture2D(symbol2, symbolCoord);
+> > >   }else if(0.1 < grayColor && grayColor < 0.15){
+> > >     color = texture2D(symbol3, symbolCoord);
+> > >   }else if(0.15 < grayColor && grayColor < 0.2){
+> > >     color = texture2D(symbol4, symbolCoord);
+> > >   }else if(0.2 < grayColor && grayColor < 0.25){
+> > >     color = texture2D(symbol5, symbolCoord);
+> > >   }else if(0.25 < grayColor && grayColor < 0.3){
+> > >     color = texture2D(symbol6, symbolCoord);
+> > >   }else if(0.3 < grayColor && grayColor < 0.35){
+> > >     color = texture2D(symbol7, symbolCoord);
+> > >   }else if(0.35 < grayColor && grayColor < 0.4){
+> > >     color = texture2D(symbol8, symbolCoord);
+> > >   }else if(0.4 < grayColor && grayColor < 0.45){
+> > >     color = texture2D(symbol9, symbolCoord);
+> > >     }else if(0.45 < grayColor && grayColor < 0.5){
+> > >     color = texture2D(symbol10, symbolCoord);
+> > >   }else if(0.5 < grayColor && grayColor < 0.55){
+> > >     color = texture2D(symbol11, symbolCoord);
+> > >   }else if(0.55 < grayColor && grayColor < 0.6){
+> > >     color = texture2D(symbol12, symbolCoord);
+> > >   }else if(0.6 < grayColor && grayColor < 0.65){
+> > >     color = texture2D(symbol13, symbolCoord);
+> > >   }else if(0.65 < grayColor && grayColor < 0.7){
+> > >     color = texture2D(symbol14, symbolCoord);
+> > >   }else if(0.7 < grayColor && grayColor < 0.75){
+> > >     color = texture2D(symbol15, symbolCoord);
+> > >   }else if(0.75 < grayColor && grayColor < 0.8){
+> > >     color = texture2D(symbol16, symbolCoord);
+> > >     }else if(0.8 < grayColor && grayColor < 0.85){
+> > >     color = texture2D(symbol17, symbolCoord);
+> > >   }else if(0.85 < grayColor && grayColor < 0.9){
+> > >     color = texture2D(symbol18, symbolCoord);
+> > >   }else if(0.9 < grayColor && grayColor < 0.95){
+> > >     color = texture2D(symbol19, symbolCoord);
+> > >   }
+> > >   else{
+> > >     color = texture2D(symbol20, symbolCoord);
+> > >   }
+> > > 
+> > >   gl_FragColor = color;
+> > > 
 > > > }
 > >
 > > 
-> 
+>
 > > :Tab title = Alfabeto
 > >
 > > > :Formula align=center
