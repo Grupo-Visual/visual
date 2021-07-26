@@ -3,7 +3,7 @@
 [Volver al informe](/docs/workshops/informeHardware)
 > > ![Foto mosaico](/docs/sketches/images/mosaico/gato_mosaico.jpg)
 > >
-> > > :P5 lib1=/docs/sketches/quadrille.min.js, sketch=/docs/sketches/image.js, width=650, height=341
+> > > :P5 lib1=/docs/sketches/quadrille.min.js, sketch=/docs/sketches/imageMosaicHard.js, width=600, height=651
 > >
 > > 
 > > ```js
